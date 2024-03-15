@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import { FloatingNavDemo } from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +17,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr">
+      <body className={inter.className}>
+        <FloatingNavDemo />
+        <main className="lg:container mx-auto">{children}</main>
+        <footer className="lg:container mx-auto py-4">
+          <Link href="https://github.com/Boris-Picard" target="_blank">
+            <p className="text-center text-sm text-muted-foreground hover:text-white transition-all">
+              © Designed & Built by Boris Picard · 2024
+            </p>
+          </Link>
+        </footer>
+      </body>
     </html>
   );
 }
