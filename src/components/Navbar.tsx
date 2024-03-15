@@ -13,7 +13,7 @@ export function FloatingNavDemo() {
       link: "/about",
     },
     {
-      name: "Experiences",
+      name: "Skills",
       link: "/contact",
     },
     {

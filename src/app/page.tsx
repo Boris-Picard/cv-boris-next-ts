@@ -1,4 +1,5 @@
 import { SparklesPreview } from "@/components/Hero";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -8,10 +9,12 @@ export default function Home() {
         <section
           id="about"
           className="flex flex-col items-start justify-start gap-4 sm:py-32 py-16"
-        ></section>
+        >
+          <About />
+        </section>
         {/* Experience */}
         <section
-          id="experiences"
+          id="skills"
           className="flex flex-col items-start justify-start gap-4 sm:py-32 sm:mx-24 md:mx-32 lg:mx-64 xl:mx-96 py-16"
         ></section>
         {/* Projects */}
