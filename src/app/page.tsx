@@ -4,12 +4,11 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col overflow-x-hidden">
-        {/* Hero */}
-        <header className="flex flex-col sm:flex-row h-screen min-w-full justify-center items-center gap-4 mt-16">
-          <SparklesPreview />
-        </header>
         {/* About */}
-        <section className="flex flex-col items-start justify-start gap-4 sm:py-32 py-16"></section>
+        <section
+          id="about"
+          className="flex flex-col items-start justify-start gap-4 sm:py-32 py-16"
+        ></section>
         {/* Experience */}
         <section
           id="experiences"
