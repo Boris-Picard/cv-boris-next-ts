@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { SparklesCore } from "./ui/sparkles";
-import { ModeToggle } from "./Mode";
 
 export function SparklesPreview() {
   return (
@@ -9,9 +8,6 @@ export function SparklesPreview() {
       id="hero"
       className="min-h-screen relative w-full bg-black flex flex-col items-center justify-center overflow-hidden"
     >
-      <div className="w-full fixed inset-0 p-5 justify-end flex z-50">
-        <ModeToggle />
-      </div>
       <div className="w-full absolute inset-0 h-screen">
         <SparklesCore
           id="tsparticlesfullpage"

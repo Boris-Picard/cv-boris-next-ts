@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import { NavbarDemo } from "@/components/Navbar";
+import { FloatingNavDemo } from "@/components/Navbar";
 import { SparklesPreview } from "@/components/Hero";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -28,13 +28,13 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <header>
-            <NavbarDemo />
+            <FloatingNavDemo />
             <SparklesPreview />
           </header>
           <main className="lg:container mx-auto">{children}</main>
           <footer className="lg:container mx-auto py-4">
             <Link href="https://github.com/Boris-Picard" target="_blank">
-              <p className="text-center text-sm text-muted-foreground hover:text-white transition-all">
+              <p className="text-center text-sm text-muted-foreground hover:text-primary transition-all">
                 © Designed & Built by Boris Picard · 2024
               </p>
             </Link>
