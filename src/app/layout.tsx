@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import { FloatingNavDemo } from "@/components/Navbar";
+import { NavbarDemo } from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <FloatingNavDemo />
+        <NavbarDemo />
         <main className="lg:container mx-auto">{children}</main>
         <footer className="lg:container mx-auto py-4">
           <Link href="https://github.com/Boris-Picard" target="_blank">
