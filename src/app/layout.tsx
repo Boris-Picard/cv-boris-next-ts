@@ -5,8 +5,11 @@ import Link from "next/link";
 import { FloatingNavDemo } from "@/components/Navbar";
 import { SparklesPreview } from "@/components/Hero";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Montserrat } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const montserrat = Montserrat({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
