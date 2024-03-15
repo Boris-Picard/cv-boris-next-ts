@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { NavbarDemo } from "@/components/Navbar";
+import { SparklesPreview } from "@/components/Hero";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,15 +21,25 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <NavbarDemo />
-        <main className="lg:container mx-auto">{children}</main>
-        <footer className="lg:container mx-auto py-4">
-          <Link href="https://github.com/Boris-Picard" target="_blank">
-            <p className="text-center text-sm text-muted-foreground hover:text-white transition-all">
-              © Designed & Built by Boris Picard · 2024
-            </p>
-          </Link>
-        </footer>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <header>
+            <NavbarDemo />
+            <SparklesPreview />
+          </header>
+          <main className="lg:container mx-auto">{children}</main>
+          <footer className="lg:container mx-auto py-4">
+            <Link href="https://github.com/Boris-Picard" target="_blank">
+              <p className="text-center text-sm text-muted-foreground hover:text-white transition-all">
+                © Designed & Built by Boris Picard · 2024
+              </p>
+            </Link>
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   );

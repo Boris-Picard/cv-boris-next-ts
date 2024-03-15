@@ -1,26 +1,31 @@
 "use client";
 import React from "react";
 import { SparklesCore } from "./ui/sparkles";
+import { ModeToggle } from "./Mode";
 
 export function SparklesPreview() {
   return (
-    <section className="w-full">
-      <div className="min-h-screen relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <div className="w-full absolute inset-0 h-screen">
-          <SparklesCore
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.6}
-            maxSize={1.4}
-            particleDensity={100}
-            className="w-full h-full"
-            particleColor="#FFFFFF"
-          />
-        </div>
-        <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
-          Boris Picard
-        </h1>
+    <section
+      id="hero"
+      className="min-h-screen relative w-full bg-black flex flex-col items-center justify-center overflow-hidden"
+    >
+      <div className="w-full fixed inset-0 p-5 justify-end flex z-50">
+        <ModeToggle />
       </div>
+      <div className="w-full absolute inset-0 h-screen">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+      </div>
+      <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
+        Boris Picard
+      </h1>
     </section>
   );
 }
