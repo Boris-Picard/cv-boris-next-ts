@@ -1,11 +1,9 @@
 import About from "@/components/About";
-import Glowing from "@/components/GlowingCircle";
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col overflow-x-hidden">
-        <Glowing />
         {/* About */}
         <section
           id="about"
