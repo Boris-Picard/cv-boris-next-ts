@@ -6,6 +6,7 @@ import { FloatingNavDemo } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Montserrat } from "next/font/google";
+import Glowing from "@/components/GlowingCircle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={montserrat.className}>
+        <Glowing />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
