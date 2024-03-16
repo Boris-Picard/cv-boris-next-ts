@@ -10,7 +10,10 @@ import Glowing from "@/components/GlowingCircle";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const montserrat = Montserrat({ weight: "400", subsets: ["latin"] });
+const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
