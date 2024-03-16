@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { FloatingNavDemo } from "@/components/Navbar";
-import { SparklesPreview } from "@/components/Hero";
+import { Hero } from "@/components/Hero";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Montserrat } from "next/font/google";
 
@@ -32,7 +32,7 @@ export default function RootLayout({
         >
           <header>
             <FloatingNavDemo />
-            <SparklesPreview />
+            <Hero />
           </header>
           <main className="lg:container mx-auto">{children}</main>
           <footer className="lg:container mx-auto py-4">
