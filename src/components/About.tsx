@@ -1,18 +1,19 @@
 "use client";
 import Image from "next/image";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+import { SeparatorDemo } from "./Skills";
 
 export default function About() {
   return (
     <>
-      <div className="flex lg:md:min-h-[250px]">
-        <h2 className="uppercase text-4xl lg:text-6xl lg:md:text-start text-center font-black tracking-wide dark:text-white">
+      <div className="flex lg:md:mb-12">
+        <span className="lg:md:w-16 w-0 h-4 bg-primary border-0 self-center" />
+        <h2 className="uppercase text-4xl lg:text-7xl mx-16 lg:md:text-start text-center font-black tracking-wide dark:text-white">
           A propos
         </h2>
-        <hr className="lg:md:w-28 w-0 h-2 bg-primary border-0 rounded" />
       </div>
       <div className="lg:md:flex flex-row flex-1 gap-16">
-        <div className="flex-1 self-center">
+        <div className="flex-1">
           <p className="text-lg font-medium leading-relaxed mb-4">
             Bonjour, je suis Boris, passionné par le numérique et les jeux vidéo
             à Amiens. Diplômé en développement web, j'apprends actuellement{" "}
@@ -40,12 +41,10 @@ export default function About() {
             rapidement. Je suis impatient de mettre mes compétences en pratique
             et de continuer à évoluer en tant que développeur.
           </p>
+          <SeparatorDemo />
         </div>
         <div className="flex-1">
-          <AspectRatio
-            className="lg:md:justify-self-end justify-self-center py-24 lg:md:py-0"
-            ratio={16 / 9}
-          >
+          <AspectRatio className="lg:md:justify-self-end" ratio={16 / 9}>
             <Image
               src="/img/PP.jpg"
               alt="Profil Picture"
