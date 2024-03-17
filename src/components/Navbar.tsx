@@ -16,13 +16,6 @@ export function FloatingNavDemo() {
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Experience",
-      link: "/about",
-      icon: (
-        <IconLetterS className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
-    {
       name: "Projects",
       link: "/about",
       icon: <IconApiApp className="h-4 w-4 text-neutral-500 dark:text-white" />,
