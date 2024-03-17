@@ -83,10 +83,10 @@ export const FloatingNav = ({
           <span>Login</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button> */}
-        <Button>
+        <Button size={"icon"}>
           <Github />
         </Button>
-        <Button>
+        <Button size={"icon"}>
           <Linkedin />
         </Button>
         <ModeToggle />
