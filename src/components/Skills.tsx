@@ -6,6 +6,7 @@ import {
   IconBrandNextjs,
   IconBrandReact,
 } from "@tabler/icons-react";
+import { Button } from "./ui/button";
 
 export function SeparatorDemo() {
   return (
@@ -20,7 +21,9 @@ export function SeparatorDemo() {
       <Separator className="my-4" />
       <div className="grid-cols-3 grid">
         <div className="grid-cols-2 grid">
-          <div className="col-span-2 text-center">Front-end</div>
+          <div className="col-span-2 text-center font-medium leading-none text-lg">
+            Front-end
+          </div>
           <div className="col-span-1 justify-self-center my-4">
             <IconBrandHtml5 size={50} strokeWidth={1.5} />
             <IconBrandJavascript size={50} strokeWidth={1.5} />
@@ -28,12 +31,28 @@ export function SeparatorDemo() {
           </div>
           {/* <Separator orientation="vertical" /> */}
           <div className="col-span-1 justify-self-center my-4">
-            <IconBrandCss3 size={50} strokeWidth={1.5} />
-            <IconBrandReact size={50} strokeWidth={1.5} />
+            <Button
+              className="hover:shadow-[0] cursor-auto"
+              size={"sm"}
+              variant={"link"}
+            >
+              <IconBrandCss3 size={50} strokeWidth={1.5} />
+            </Button>
+            <Button className="hover:shadow-[0]" size={"sm"} variant={"link"}>
+              <IconBrandReact size={50} strokeWidth={1.5} />
+            </Button>
           </div>
         </div>
-        <div className="col-span-2 text-center">Back-End</div>
-        <div className="col-span-2 text-center">Utils</div>
+        <div className="grid-cols-2 grid">
+          <div className="col-span-2 text-center font-medium leading-none text-lg">
+            Back-End
+          </div>
+        </div>
+        <div className="grid grid-cols-2">
+          <div className="col-span-2 text-center font-medium leading-none text-lg">
+            Utils
+          </div>
+        </div>
       </div>
     </div>
   );
