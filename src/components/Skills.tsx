@@ -1,20 +1,26 @@
-import { Separator } from "@/components/ui/separator";
-import { AnimatedTooltipPreview } from "./Tooltip";
-
-export function SeparatorDemo() {
+import Image from "next/image";
+export default function Skills() {
+  const logos = [
+    {
+      src: "assets/html-1.svg",
+      alt: "html",
+      width: 75,
+      height: 75,
+    },
+  ];
   return (
-    <div>
-      <div className="space-y-1">
-        <Separator className="my-4" />
-        <h3 className=" font-medium leading-none text-lg ">My Skills</h3>
-        <p className="text-sm text-muted-foreground">
-          An open-source UI component library.
-        </p>
-      </div>
-      <Separator className="my-4" />
-      <div className="flex flex-wrap justify-center gap-5">
-        <AnimatedTooltipPreview />
-      </div>
-    </div>
+    <>
+      {logos.map((logo, index) => {
+        return (
+          <Image
+            key={index}
+            src={logo.src}
+            alt={logo.alt}
+            width={logo.width}
+            height={logo.height}
+          />
+        );
+      })}
+    </>
   );
 }

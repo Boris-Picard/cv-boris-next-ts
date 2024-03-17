@@ -1,13 +1,14 @@
 "use client";
 import Image from "next/image";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
-import { SeparatorDemo } from "./Skills";
+import Skills from "./Skills";
+import { Separator } from "./ui/separator";
 
 export default function About() {
   return (
     <>
       <div className="flex lg:md:mb-12">
-        <span className="lg:md:w-16 w-0 h-4 bg-primary border-0 self-center" />
+        <span className="lg:md:w-16 rounded-full w-0 h-4 bg-primary border-0 self-center" />
         <h2 className="uppercase text-4xl lg:text-7xl mx-16 lg:md:text-start text-center font-black tracking-wide dark:text-white">
           A propos
         </h2>
@@ -41,7 +42,8 @@ export default function About() {
             rapidement. Je suis impatient de mettre mes compétences en pratique
             et de continuer à évoluer en tant que développeur.
           </p>
-          <SeparatorDemo />
+          <Separator className="my-4" />
+          <Skills />
         </div>
         <div className="flex-1">
           <AspectRatio className="lg:md:justify-self-end" ratio={16 / 9}>
