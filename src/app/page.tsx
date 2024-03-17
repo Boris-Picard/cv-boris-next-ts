@@ -11,11 +11,6 @@ export default function Home() {
         >
           <About />
         </section>
-        {/* Experience */}
-        <section
-          id="skills"
-          className="flex flex-col items-start justify-start gap-4 sm:py-32 sm:mx-24 md:mx-32 lg:mx-64 xl:mx-96 py-16 min-h-screen"
-        ></section>
         {/* Projects */}
         <section
           id="projects"
