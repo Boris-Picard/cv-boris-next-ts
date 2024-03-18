@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import Skills from "./Skills";
-import { Separator } from "./ui/separator";
+import Experiences from "./Experiences";
 
 export default function About() {
   return (
@@ -42,8 +42,8 @@ export default function About() {
             rapidement. Je suis impatient de mettre mes compétences en pratique
             et de continuer à évoluer en tant que développeur.
           </p>
-          <Separator className="my-4" />
-          <Skills />
+          {/* <Skills /> */}
+          <Experiences />
         </div>
         <div className="flex-1">
           <AspectRatio
