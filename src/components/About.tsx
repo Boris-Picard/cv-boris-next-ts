@@ -8,14 +8,14 @@ export default function About() {
   return (
     <>
       <div className="flex lg:md:mb-12">
-        <span className="lg:md:w-16 rounded-full w-0 h-4 bg-primary border-0 self-center" />
-        <h2 className="uppercase text-4xl lg:text-7xl mx-16 lg:md:text-start text-center font-black tracking-wide dark:text-white">
+        <span className="lg:md:w-16 rounded-full hidden lg:md:block h-4 bg-primary border-0 self-center" />
+        <h2 className="uppercase text-4xl lg:text-7xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-black tracking-wide dark:text-white">
           A propos
         </h2>
       </div>
       <div className="lg:md:flex flex-row flex-1 gap-16">
-        <div className="flex-1">
-          <p className="text-lg font-medium leading-relaxed mb-4">
+        <div className="flex-1 lg:md:text-start text-center">
+          <p className="lg:md:text-lg font-medium leading-relaxed mb-4">
             Bonjour, je suis Boris, passionné par le numérique et les jeux vidéo
             à Amiens. Diplômé en développement web, j'apprends actuellement{" "}
             <span className="text-primary font-bold">React,</span>{" "}
@@ -23,7 +23,7 @@ export default function About() {
             <span className="text-primary font-bold">Node.js</span> et{" "}
             <span className="text-primary font-bold">MongoDB.</span>
           </p>
-          <p className="text-lg font-medium leading-relaxed mb-4">
+          <p className="lg:md:text-lg font-medium leading-relaxed mb-4">
             J'ai acquis des compétences en{" "}
             <span className="text-primary font-bold">HTML,</span>{" "}
             <span className="text-primary font-bold">CSS,</span>{" "}
@@ -34,7 +34,7 @@ export default function About() {
               programmation orientée objet.
             </span>
           </p>
-          <p className="text-lg font-medium leading-relaxed mb-4">
+          <p className="lg:md:text-lg font-medium leading-relaxed mb-4">
             Mon objectif est de devenir développeur{" "}
             <span className="text-primary font-bold">full-stack</span> pour
             créer des sites web fonctionnels et esthétiquement plaisants. Mon
@@ -46,7 +46,10 @@ export default function About() {
           <Skills />
         </div>
         <div className="flex-1">
-          <AspectRatio className="lg:md:justify-self-end" ratio={16 / 9}>
+          <AspectRatio
+            className="lg:md:justify-self-end justify-self-center"
+            ratio={16 / 9}
+          >
             <Image
               src="/img/PP.jpg"
               alt="Profil Picture"

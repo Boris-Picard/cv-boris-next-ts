@@ -7,24 +7,35 @@ import {
   IconMessage,
   IconUser,
 } from "@tabler/icons-react";
+import { Button } from "./ui/button";
 
 export function FloatingNavDemo() {
   const navItems = [
     {
       name: "About",
       link: "/about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: (
+        <Button size={"icon"}>
+          <IconUser className="h-4 w-4 bg-primary dark:text-white" />
+        </Button>
+      ),
     },
     {
       name: "Projects",
       link: "/about",
-      icon: <IconApiApp className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: (
+        <Button size={"icon"}>
+          <IconApiApp className="h-4 w-4 bg-primary dark:text-white" />
+        </Button>
+      ),
     },
     {
       name: "Contact",
       link: "/contact",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <Button size={"icon"}>
+          <IconMessage className="h-4 w-4 bg-primary dark:text-white" />
+        </Button>
       ),
     },
   ];

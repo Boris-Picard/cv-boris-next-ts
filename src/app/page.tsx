@@ -7,7 +7,7 @@ export default function Home() {
         {/* About */}
         <section
           id="about"
-          className="flex flex-col items-start justify-start gap-4 sm:py-32 py-16 min-h-screen"
+          className="flex flex-col gap-4 sm:py-32 py-16 min-h-screen"
         >
           <About />
         </section>
