@@ -39,7 +39,7 @@ export default function RootLayout({
             <FloatingNavDemo />
             <Hero />
           </header>
-          <main className="lg:container mx-auto">{children}</main>
+          <main className="container mx-auto">{children}</main>
           <footer className="lg:container mx-auto py-4">
             <Link href="https://github.com/Boris-Picard" target="_blank">
               <p className="text-center text-sm text-muted-foreground hover:text-primary transition-all">
