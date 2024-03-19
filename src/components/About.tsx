@@ -3,6 +3,8 @@ import Image from "next/image";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import Skills from "./Skills";
 import Experiences from "./Experiences";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function About() {
   return (
@@ -58,6 +60,32 @@ export default function About() {
               height={450}
               loading="lazy"
             />
+            <div className="flex items-center mt-4">
+              <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
+              <h3 className="uppercase text-2xl mx-auto lg:md:mx-10 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
+                Me contacter.
+              </h3>
+            </div>
+            <div className="flex flex-row my-4 justify-center lg:md:justify-start">
+              <Button
+                variant={"link"}
+                className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mr-3"
+              >
+                <Github />
+              </Button>
+              <Button
+                variant={"link"}
+                className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mx-3"
+              >
+                <Linkedin />
+              </Button>
+              <Button
+                variant={"link"}
+                className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mx-3"
+              >
+                <Mail />
+              </Button>
+            </div>
           </AspectRatio>
         </div>
       </div>

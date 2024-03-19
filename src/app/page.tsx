@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -11,20 +12,22 @@ export default function Home() {
         >
           <About />
         </section>
-        {/* Projects */}
-        <section
-          id="projects"
-          className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16 min-h-screen"
-        ></section>
         {/* Skills */}
         <section
           id="skills"
-          className="flex flex-col items-center justify-center gap-4 sm:py-32 py-16 min-h-screen"
+          className="flex flex-col gap-4 sm:py-32 py-16 min-h-screen"
+        >
+          <Skills />
+        </section>
+        {/* Projects */}
+        <section
+          id="projects"
+          className="flex flex-col gap-4 sm:py-32 py-16 min-h-screen"
         ></section>
         {/* Contact */}
         <section
           id="contact"
-          className="flex flex-col items-center justify-center gap-4 sm:py-48 py-24 min-h-screen"
+          className="flex flex-col gap-4 sm:py-32 py-16 min-h-screen"
         ></section>
       </div>
     </>

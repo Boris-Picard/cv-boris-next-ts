@@ -1,9 +1,9 @@
 import { Separator } from "./ui/separator";
 import {
-  Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
+  Accordion,
 } from "./ui/accordion";
 import { Card, CardDescription, CardFooter, CardHeader } from "./ui/card";
 import { MapPin } from "lucide-react";
@@ -12,9 +12,14 @@ import { Badge } from "./ui/badge";
 export default function Experiences() {
   return (
     <>
-      <Separator className="my-4" />
-      <h3 className="text-3xl font-extrabold">Experiences.</h3>
-      <Separator className="my-4" />
+      <Separator className="my-4 bg-slate-300" />
+      <div className="flex items-center">
+        <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
+        <h3 className="uppercase text-2xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
+          Experiences.
+        </h3>
+      </div>
+      {/* <Separator className="my-4" /> */}
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger className="font-semibold">
@@ -23,7 +28,7 @@ export default function Experiences() {
           <AccordionContent>
             <Card>
               <CardHeader>
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center justify-center lg:md:justify-start">
                   <MapPin />
                   <span className="mx-3 font-semibold">Amiens</span>
                 </div>
@@ -44,9 +49,11 @@ export default function Experiences() {
           <AccordionContent>
             <Card>
               <CardHeader>
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center justify-center lg:md:justify-start">
                   <MapPin />
-                  <span className="mx-3 font-semibold">Amiens</span>
+                  <span className="lg:md:mx-3 mx-2 font-semibold">
+                    Amiens, Paris - Millenium (MGG)
+                  </span>
                 </div>
               </CardHeader>
               <CardDescription className="dark:text-white font-medium flex flex-col space-y-1.5 pt-3">
@@ -58,9 +65,13 @@ export default function Experiences() {
             </Card>
           </AccordionContent>
         </AccordionItem>
-        <Separator className="my-4" />
-        <h3 className="text-3xl font-extrabold mt-4">Formations.</h3>
-        <Separator className="my-4" />
+        <Separator className="my-4 bg-slate-300" />
+        <div className="flex items-center">
+          <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
+          <h3 className="uppercase text-2xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
+            Formations.
+          </h3>
+        </div>
         <AccordionItem value="item-3">
           <AccordionTrigger className="font-semibold">
             LA MANU (2023-2024){" "}
@@ -68,7 +79,7 @@ export default function Experiences() {
           <AccordionContent>
             <Card>
               <CardHeader>
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center justify-center lg:md:justify-start">
                   <MapPin />
                   <span className="mx-3 font-semibold">Amiens</span>
                 </div>
@@ -77,24 +88,14 @@ export default function Experiences() {
                 <span>RNCP Niveau 5 - "Développeur Web et Web Mobile"</span>
               </CardDescription>
               <CardFooter>
-                <Badge variant="secondary" className="mr-2">
-                  HTML
-                </Badge>
-                <Badge variant="secondary" className="mx-2">
-                  CSS
-                </Badge>
-                <Badge variant="secondary" className="mx-2">
-                  Javascript
-                </Badge>
-                <Badge variant="secondary" className="mx-2">
-                  PHP
-                </Badge>
-                <Badge variant="secondary" className="mx-2">
-                  MySql
-                </Badge>
-                <Badge variant="secondary" className="mx-2">
-                  POO
-                </Badge>
+                <div className="flex flex-wrap gap-3">
+                  <Badge variant="secondary">HTML</Badge>
+                  <Badge variant="secondary">CSS</Badge>
+                  <Badge variant="secondary">Javascript</Badge>
+                  <Badge variant="secondary">PHP</Badge>
+                  <Badge variant="secondary">MySql</Badge>
+                  <Badge variant="secondary">POO</Badge>
+                </div>
               </CardFooter>
             </Card>
           </AccordionContent>
