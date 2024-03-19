@@ -41,13 +41,12 @@ export default function Projects() {
           </div>
         </div>
         <div className="lg:row-span-1">
-          <AspectRatio className="flex justify-end" ratio={16 / 9}>
+          <AspectRatio ratio={16 / 9}>
             <Image
               src={"/img/blazerifle-preview.png"}
-              height={600}
-              width={600}
+              fill={true}
               alt="blazerifle website"
-              className="object-cover"
+              className="object-cover shadow-lg !w-full lg:md:!w-[600px] justify-self-end rounded-3xl"
             />
           </AspectRatio>
         </div>
