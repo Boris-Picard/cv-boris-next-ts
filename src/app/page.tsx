@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 
 export default function Home() {
@@ -23,7 +24,9 @@ export default function Home() {
         <section
           id="projects"
           className="flex flex-col gap-4 sm:py-32 py-16 min-h-screen"
-        ></section>
+        >
+          <Projects />
+        </section>
         {/* Contact */}
         <section
           id="contact"
