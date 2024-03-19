@@ -13,12 +13,11 @@ export default function Home() {
         >
           <About />
         </section>
-        {/* Skills */}
         <section
           id="skills"
           className="flex flex-col gap-4 sm:py-32 py-16 min-h-screen"
         >
-          <Skills />
+          {/* <Skills /> */}
         </section>
         {/* Projects */}
         <section
