@@ -1,7 +1,13 @@
 "use client";
+import Image from "next/image";
+import React from "react";
+import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import { Badge } from "./ui/badge";
-import Image from "next/image";
+import { Github, Link } from "lucide-react";
+import { Button } from "./ui/button";
+import { Separator } from "./ui/separator";
+
 export default function Projects() {
   return (
     <>
@@ -11,44 +17,74 @@ export default function Projects() {
           projets.
         </h2>
       </div>
-      <div className="grid lg:md:grid-cols-2 grid-cols-1 items-center">
-        <div className="lg:row-span-1 space-y-4">
-          <div className="flex flex-wrap items-center">
-            <span className="text-primary font-bold text-xl">01.</span>
-            <h3 className="uppercase text-2xl lg:mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
-              Blazerifle
-            </h3>
-          </div>
-          <p className="text-base leading-relaxed">
-            Ce projet a mis en place une base de données MySQL et intégré HTML,
-            CSS, JavaScript et PHP selon le modèle MVC. Pour la sécurité, un
-            singleton, PDO et des transactions ont été utilisés, avec un token
-            JWT pour la validation d'email. Le site comprend la gestion des
-            utilisateurs, des articles, des commentaires, des favoris, des jeux,
-            des catégories, un calendrier d'événements et des vidéos, avec neuf
-            opérations CRUD. La mise en ligne s'est faite sur Hostinger via
-            FileZilla, avec des mesures de sécurité telles que filter_input et
-            password_hash. Conformité au RGPD, référencement SEO et respect des
-            normes W3C ont été assurés.
-          </p>
-          <div className="flex flex-wrap space-x-2">
-            <Badge variant="secondary">HTML</Badge>
-            <Badge variant="secondary">CSS</Badge>
-            <Badge variant="secondary">Javascript</Badge>
-            <Badge variant="secondary">PHP</Badge>
-            <Badge variant="secondary">MySql</Badge>
-            <Badge variant="secondary">POO</Badge>
-          </div>
+      <div className="grid lg:md:grid-cols-3 gap-4">
+        <div className="col-span-2">
+          <Card>
+            <CardHeader className="space-y-4">
+              <div className="flex flex-wrap items-center">
+                <span className="text-primary font-bold text-xl">01.</span>
+                <h3 className="uppercase lg:md:text-2xl text-xl lg:mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
+                  Blazerifle
+                </h3>
+              </div>
+              <AspectRatio ratio={16 / 9}>
+                <Image
+                  src={"/img/blazerifle-preview.png"}
+                  fill={true}
+                  alt="blazerifle website"
+                  className="object-cover rounded-3xl"
+                />
+              </AspectRatio>
+            </CardHeader>
+            <Separator className="my-4 bg-slate-300" />
+            <CardContent className="text-base leading-relaxed mt-4 font-semibold">
+              Portail d'actualités jeux vidéos : Tableau de bord complet,
+              validation d'email (JWT), profils utilisateurs, commentaires
+              vérifiés, ajout d'articles en favoris. Sécurité renforcée avec
+              nettoyage et vérification des données. Une expérience captivante
+              pour les passionnés du jeu.
+            </CardContent>
+            <Separator className="mt-4 bg-slate-300" />
+            <CardFooter>
+              <div className="flex space-x-3">
+                <Badge variant="secondary">HTML</Badge>
+                <Badge variant="secondary">CSS</Badge>
+                <Badge variant="secondary">Javascript</Badge>
+                <Badge variant="secondary">PHP</Badge>
+                <Badge variant="secondary">MySql</Badge>
+                <Badge variant="secondary">POO</Badge>
+              </div>
+              <div className="flex justify-end flex-1 space-x-4">
+                <Button>
+                  <Github />
+                </Button>
+                <Button>
+                  <Link />
+                </Button>
+              </div>
+            </CardFooter>
+          </Card>
         </div>
-        <div className="lg:row-span-1">
-          <AspectRatio ratio={16 / 9}>
-            <Image
-              src={"/img/blazerifle-preview.png"}
-              fill={true}
-              alt="blazerifle website"
-              className="object-cover shadow-lg !w-full lg:md:!w-[600px] justify-self-end rounded-3xl"
-            />
-          </AspectRatio>
+        <div className="col-span-1">
+          <Card>
+            <CardHeader></CardHeader>
+            <CardContent></CardContent>
+            <CardFooter></CardFooter>
+          </Card>
+        </div>
+        <div className="col-span-1">
+          <Card>
+            <CardHeader></CardHeader>
+            <CardContent></CardContent>
+            <CardFooter></CardFooter>
+          </Card>
+        </div>
+        <div className="col-span-2">
+          <Card>
+            <CardHeader></CardHeader>
+            <CardContent></CardContent>
+            <CardFooter></CardFooter>
+          </Card>
         </div>
       </div>
     </>
