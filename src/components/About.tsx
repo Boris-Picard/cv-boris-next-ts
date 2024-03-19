@@ -71,12 +71,6 @@ export default function About() {
                 variant={"link"}
                 className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mr-3"
               >
-                <Github />
-              </Button>
-              <Button
-                variant={"link"}
-                className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mx-3"
-              >
                 <Linkedin />
               </Button>
               <Button
@@ -84,6 +78,12 @@ export default function About() {
                 className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mx-3"
               >
                 <Mail />
+              </Button>
+              <Button
+                variant={"link"}
+                className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mx-3"
+              >
+                <Github />
               </Button>
             </div>
           </AspectRatio>
