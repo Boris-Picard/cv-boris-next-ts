@@ -17,8 +17,8 @@ export default function Projects() {
           projets.
         </h2>
       </div>
-      <div className="grid lg:md:grid-cols-3 gap-4">
-        <div className="col-span-2 grid">
+      <div className="grid lg:md:grid-cols-3 grid-cols-1 lg:md:gap-4">
+        <div className="xl:lg:col-span-2 col-span-3 grid">
           <Card>
             <CardHeader className="space-y-4">
               <div className="flex flex-wrap items-center">
@@ -70,7 +70,7 @@ export default function Projects() {
             </CardFooter>
           </Card>
         </div>
-        <div className="col-span-1 grid">
+        <div className="xl:lg:col-span-1 col-span-3 grid">
           <Card className="flex flex-col justify-center">
             <CardHeader>
               <div className="flex flex-wrap items-center">
