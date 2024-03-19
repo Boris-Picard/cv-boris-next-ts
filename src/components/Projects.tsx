@@ -12,7 +12,7 @@ export default function Projects() {
         </h2>
       </div>
       <div className="grid lg:md:grid-cols-2 grid-cols-1 items-center">
-        <div className="lg:row-span-1">
+        <div className="lg:row-span-1 space-y-4">
           <div className="flex flex-wrap items-center">
             <span className="text-primary font-bold text-xl">01.</span>
             <h3 className="uppercase text-2xl lg:mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
@@ -31,7 +31,7 @@ export default function Projects() {
             password_hash. Conformité au RGPD, référencement SEO et respect des
             normes W3C ont été assurés.
           </p>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap space-x-2">
             <Badge variant="secondary">HTML</Badge>
             <Badge variant="secondary">CSS</Badge>
             <Badge variant="secondary">Javascript</Badge>
