@@ -4,7 +4,6 @@ import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import Skills from "./Skills";
 import Experiences from "./Experiences";
 import { Github, Linkedin, Mail } from "lucide-react";
-import { Button } from "./ui/button";
 
 export default function About() {
   return (
@@ -66,25 +65,16 @@ export default function About() {
                 Me contacter.
               </h3>
             </div>
-            <div className="flex flex-row my-4 justify-center lg:md:justify-start">
-              <Button
-                variant={"link"}
-                className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mr-3"
-              >
+            <div className="flex flex-row my-4 justify-center lg:md:justify-start space-x-3 cursor-pointer">
+              <span className="hover:text-black dark:hover:text-white dark:text-primary hover:shadow-0">
                 <Linkedin />
-              </Button>
-              <Button
-                variant={"link"}
-                className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mx-3"
-              >
+              </span>
+              <span className="hover:text-black dark:hover:text-white dark:text-primary hover:shadow-0">
                 <Mail />
-              </Button>
-              <Button
-                variant={"link"}
-                className="rounded-lg hover:text-black dark:hover:text-white dark:text-primary !bg-transparent hover:shadow-0 mx-3"
-              >
+              </span>
+              <span className="hover:text-black dark:hover:text-white dark:text-primary hover:shadow-0">
                 <Github />
-              </Button>
+              </span>
             </div>
           </AspectRatio>
         </div>
