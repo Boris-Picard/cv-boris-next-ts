@@ -5,7 +5,7 @@ import {
   AccordionContent,
   Accordion,
 } from "./ui/accordion";
-import { Card, CardDescription, CardFooter, CardHeader } from "./ui/card";
+import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { MapPin } from "lucide-react";
 import { Badge } from "./ui/badge";
 
@@ -15,7 +15,7 @@ export default function Experiences() {
       <Separator className="my-4 bg-slate-300" />
       <div className="flex items-center">
         <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
-        <h3 className="uppercase text-2xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
+        <h3 className="uppercase lg:md:text-2xl text-xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
           Experiences.
         </h3>
       </div>
@@ -33,12 +33,12 @@ export default function Experiences() {
                   <span className="mx-3 font-semibold">Amiens</span>
                 </div>
               </CardHeader>
-              <CardDescription className="dark:text-white font-medium flex flex-col space-y-1.5 pt-3">
+              <CardContent className="dark:text-white font-medium flex flex-col space-y-1.5 pt-3">
                 <span>Responsabilités</span>
                 <span>Adaptabilité</span>
                 <span>Gestion du stress</span>
                 <span>Travail d'équipe</span>
-              </CardDescription>
+              </CardContent>
             </Card>
           </AccordionContent>
         </AccordionItem>
@@ -56,19 +56,19 @@ export default function Experiences() {
                   </span>
                 </div>
               </CardHeader>
-              <CardDescription className="dark:text-white font-medium flex flex-col space-y-1.5 pt-3">
+              <CardContent className="dark:text-white font-medium flex flex-col space-y-1.5 pt-3">
                 <span>Travail d'équipe</span>
                 <span>Communication</span>
                 <span>Adaptabilité</span>
                 <span>Autodiscipline</span>
-              </CardDescription>
+              </CardContent>
             </Card>
           </AccordionContent>
         </AccordionItem>
         <Separator className="my-4 bg-slate-300" />
         <div className="flex items-center">
           <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
-          <h3 className="uppercase text-2xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
+          <h3 className="uppercase lg:md:text-2xl text-xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
             Formations.
           </h3>
         </div>
@@ -84,9 +84,9 @@ export default function Experiences() {
                   <span className="mx-3 font-semibold">Amiens</span>
                 </div>
               </CardHeader>
-              <CardDescription className="dark:text-white font-medium flex flex-col space-y-1.5 pt-3">
+              <CardContent className="dark:text-white font-medium flex flex-col space-y-1.5 pt-3">
                 <span>RNCP Niveau 5 - "Développeur Web et Web Mobile"</span>
-              </CardDescription>
+              </CardContent>
               <CardFooter>
                 <div className="flex flex-wrap gap-3">
                   <Badge variant="secondary">HTML</Badge>

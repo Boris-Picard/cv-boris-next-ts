@@ -61,19 +61,16 @@ export default function About() {
             />
             <div className="flex items-center mt-4">
               <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
-              <h3 className="uppercase text-2xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
+              <h3 className="uppercase lg:md:text-2xl text-xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
                 Me contacter.
               </h3>
             </div>
-            <div className="flex flex-row my-4 justify-center lg:md:justify-start space-x-3 cursor-pointer">
-              <span className="hover:text-black dark:hover:text-white dark:text-primary hover:shadow-0">
+            <div className="flex flex-row my-4 justify-center lg:md:justify-start space-x-3">
+              <span className="hover:text-primary dark:hover:text-white dark:text-primary hover:shadow-0 cursor-pointer">
                 <Linkedin />
               </span>
-              <span className="hover:text-black dark:hover:text-white dark:text-primary hover:shadow-0">
+              <span className="hover:text-primary dark:hover:text-white dark:text-primary hover:shadow-0 cursor-pointer">
                 <Mail />
-              </span>
-              <span className="hover:text-black dark:hover:text-white dark:text-primary hover:shadow-0">
-                <Github />
               </span>
             </div>
           </AspectRatio>
