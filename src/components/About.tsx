@@ -62,7 +62,7 @@ export default function About() {
             />
             <div className="flex items-center mt-4">
               <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
-              <h3 className="uppercase text-2xl mx-auto lg:md:mx-10 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
+              <h3 className="uppercase text-2xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
                 Me contacter.
               </h3>
             </div>
