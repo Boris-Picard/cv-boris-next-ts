@@ -8,9 +8,9 @@ import {
 } from "framer-motion";
 import { cn } from "../../../utils/cn";
 import Link from "next/link";
-import { Button } from "./button";
-import { Github, Linkedin } from "lucide-react";
 import { ModeToggle } from "../Mode";
+import { Mail } from "lucide-react";
+import { Button } from "./button";
 
 export const FloatingNav = ({
   navItems,
@@ -72,7 +72,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative font-bold dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-400 hover:text-primary"
+              "relative font-semibold dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-primary hover:text-primary"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
@@ -83,11 +83,9 @@ export const FloatingNav = ({
           <span>Login</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button> */}
-        <Button size={"icon"} aria-label="Github">
-          <Github />
-        </Button>
-        <Button size={"icon"} aria-label="Linkedin">
-          <Linkedin />
+        <Button className="bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white">
+          <Mail />
+          <span className="mx-3">Me contacter</span>
         </Button>
         <ModeToggle />
       </motion.div>
