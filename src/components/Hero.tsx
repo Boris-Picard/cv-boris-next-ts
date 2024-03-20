@@ -19,7 +19,7 @@ export function Hero() {
             Développeur <span className="text-primary">Web</span>
           </span>
           <div className="flex lg:block md:block">
-            <Button className="px-12 mx-auto py-8 rounded-full tracking-widest uppercase font-bold transition duration-200">
+            <Button className="px-12 mx-auto py-8 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white">
               Télécharger mon cv
             </Button>
           </div>
