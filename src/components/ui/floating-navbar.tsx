@@ -85,7 +85,7 @@ export const FloatingNav = ({
         </button> */}
         <Button className="bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white">
           <Mail />
-          <span className="mx-3">Me contacter</span>
+          <span className="mx-3 hidden xl:lg:md:block">Me contacter</span>
         </Button>
         <ModeToggle />
       </motion.div>
