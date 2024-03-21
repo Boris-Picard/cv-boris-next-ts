@@ -48,12 +48,12 @@ export default function Projects() {
               <Badge variant="secondary">MySql</Badge>
               <Badge variant="secondary">POO</Badge>
             </div>
-            <div className="flex justify-between  space-x-3">
+            <div className="flex justify-around space-x-3">
               <IconLink href="/" icon="Link">
                 Voir le site
               </IconLink>
               <IconLink href="/" icon="Github">
-                code
+                Code
               </IconLink>
             </div>
           </CardFooter>
@@ -74,6 +74,66 @@ export default function Projects() {
               }`}
             />
           </AspectRatio>
+        </div>
+      </Card>
+      <Card className="flex flex-col lg:flex-row text-end my-4">
+        <div
+          className="lg:w-1/2 overflow-hidden rounded-3xl"
+          onMouseEnter={() => setMouseOver(true)}
+          onMouseLeave={() => setMouseOver(false)}
+        >
+          <AspectRatio ratio={16 / 9}>
+            <Image
+              src={"/img/rent-my-ride.png"}
+              fill={true}
+              quality={75}
+              alt="rent my ride website"
+              className={`object-cover rounded-3xl transition-all duration-500  ${
+                mouseOver ? "scale-110" : ""
+              }`}
+            />
+          </AspectRatio>
+        </div>
+        <div className="lg:w-1/2 flex flex-wrap justify-end">
+          <CardHeader>
+            <div className="flex items-center">
+              <span className="text-primary font-bold text-end text-xl">
+                02.
+              </span>
+              <h3 className="uppercase lg:md:text-2xl text-end text-xl lg:mx-3 font-extrabold tracking-wide dark:text-white">
+                Rent my ride
+              </h3>
+            </div>
+          </CardHeader>
+          <CardContent className="p-0">
+            <p className="text-base leading-relaxed font-medium">
+              Projet pour l'obtention du titre RNCP Niveau 5 "Développeur Web et
+              Web Mobile" : Maquette Figma, MERISE, MySQL, PHP. Gestion complète
+              des utilisateurs, articles, commentaires, favoris. Sécurité
+              renforcée : validation d'email (JWT), hashage des mots de passe,
+              RGPD. Utilisation de singleton et transactions pour la sécurité
+              des opérations sur la base de données. SEO optimisé, respect des
+              normes W3C. Mise en ligne sur Hostinger.
+            </p>
+          </CardContent>
+          <CardFooter className="flex justify-between">
+            <div className="flex flex-wrap space-x-3 justify-end">
+              <Badge variant="secondary">HTML</Badge>
+              <Badge variant="secondary">CSS</Badge>
+              <Badge variant="secondary">Javascript</Badge>
+              <Badge variant="secondary">PHP</Badge>
+              <Badge variant="secondary">MySql</Badge>
+              <Badge variant="secondary">POO</Badge>
+            </div>
+            <div className="flex justify-around space-x-3">
+              <IconLink href="/" icon="Link">
+                Voir le site
+              </IconLink>
+              <IconLink href="/" icon="Github">
+                Code
+              </IconLink>
+            </div>
+          </CardFooter>
         </div>
       </Card>
     </>

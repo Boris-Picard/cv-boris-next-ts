@@ -6,17 +6,9 @@ export default function IconLink(props) {
 
   return (
     <Link href={props.href} passHref>
-      <div className="hover:underline flex flex-row  cursor-pointer">
-        <IconInc
-          style={{
-            marginTop: "auto",
-            marginBottom: "auto",
-            marginRight: "10px",
-          }}
-        />
-        <div style={{ marginTop: "auto", marginBottom: "auto" }}>
-          {props.children}
-        </div>
+      <div className="hover:underline flex flex-row cursor-pointer">
+        <IconInc className="mr-2" />
+        <div className="z-50">{props.children}</div>
       </div>
     </Link>
   );
