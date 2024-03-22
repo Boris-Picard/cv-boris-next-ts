@@ -1,6 +1,6 @@
 import About from "@/components/About";
 import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -13,12 +13,6 @@ export default function Home() {
         >
           <About />
         </section>
-        <section
-          id="skills"
-          className="flex flex-col gap-4 sm:py-32 py-16 min-h-screen"
-        >
-          {/* <Skills /> */}
-        </section>
         {/* Projects */}
         <section
           id="projects"
@@ -30,7 +24,9 @@ export default function Home() {
         <section
           id="contact"
           className="flex flex-col gap-4 sm:py-32 py-16 min-h-screen"
-        ></section>
+        >
+          <Contact />
+        </section>
       </div>
     </>
   );
