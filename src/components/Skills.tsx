@@ -111,11 +111,11 @@ export default function Skills() {
 
   return (
     <>
-      <div className="flex justify-between items-end flex-wrap">
+      <div className="flex lg:md:justify-between justify-center items-end flex-wrap">
         {logos.map((logo) => (
           <div
             key={logo.id}
-            className="flex flex-col w-1/3 xl:lg:md:w-1/6 items-center m-4"
+            className="flex flex-col items-center m-4 w-1/3 lg:md:w-auto"
           >
             <Image
               className={logo.class}
