@@ -77,8 +77,10 @@ export default function Projects() {
           <AspectRatio ratio={16 / 9}>
             <Image
               src={"/assets/gif-blazerifle.gif"}
+              sizes="100vw"
               fill={true}
               quality={75}
+              loading="lazy"
               alt="blazerifle website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
                 isHovered1 ? "scale-110" : ""
@@ -133,7 +135,9 @@ export default function Projects() {
             <Image
               src={"/assets/gif-rent-my-ride.gif"}
               fill={true}
+              sizes="100vw"
               quality={75}
+              loading="lazy"
               alt="rent my ride website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
                 isHovered2 ? "scale-110" : ""
@@ -198,6 +202,8 @@ export default function Projects() {
               src={"/assets/gif-reacttasks.gif"}
               fill={true}
               quality={75}
+              sizes="100vw"
+              loading="lazy"
               alt="reacttasks website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
                 isHovered3 ? "scale-110" : ""
@@ -250,6 +256,8 @@ export default function Projects() {
               src={"/assets/gif-cv.gif"}
               fill={true}
               quality={75}
+              loading="lazy"
+              sizes="100vw"
               alt="cv numérique website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
                 isHovered4 ? "scale-110" : ""
