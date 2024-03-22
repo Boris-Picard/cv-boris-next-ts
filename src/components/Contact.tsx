@@ -25,24 +25,26 @@ export default function Contact() {
             professionnel.
           </h4>
           <p className="font-medium">N'hésitez pas à me contacter !</p>
-          <div className="flex-col flex xl:lg:w-1/6 md:w-1/4 space-y-6">
+          <div className="flex-col flex xl:lg:w-1/5 md:w-1/4 space-y-6">
             <a
-              href=""
-              className="inline-flex items-center p-2 dark:hover:text-primary justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary rounded-full text-white shadow-lg dark:bg-primary dark:hover:bg-white dark:hover:text-black dark:text-white  hover:bg-black  hover:text-white"
+              href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%62%6F%72%69%73%2D%70%69%63%61%72%64%2E%66%72"
+              className="inline-flex items-center p-3 dark:hover:text-primary justify-center whitespace-nowrap text-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary rounded-full text-white shadow-lg dark:bg-primary dark:hover:bg-white dark:hover:text-black dark:text-white  hover:bg-black  hover:text-white"
             >
               <Mail />
               <span className="mx-2">Mon Email</span>
             </a>
             <a
-              href=""
-              className="inline-flex items-center p-2 dark:hover:text-primary justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary rounded-full text-white shadow-lg dark:bg-primary dark:hover:bg-white dark:hover:text-black dark:text-white  hover:bg-black  hover:text-white"
+              href="https://www.linkedin.com/in/boris-picard-2906029b/"
+              target="_blank"
+              className="inline-flex items-center p-3 dark:hover:text-primary justify-center whitespace-nowrap text-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary rounded-full text-white shadow-lg dark:bg-primary dark:hover:bg-white dark:hover:text-black dark:text-white  hover:bg-black  hover:text-white"
             >
               <Linkedin />
               <span className="mx-2">Mon Linkedin</span>
             </a>
             <a
-              href=""
-              className="inline-flex items-center p-2 dark:hover:text-primary justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary rounded-full text-white shadow-lg dark:bg-primary dark:hover:bg-white dark:hover:text-black dark:text-white  hover:bg-black  hover:text-white"
+              href="https://github.com/Boris-Picard"
+              target="_blank"
+              className="inline-flex items-center p-3 dark:hover:text-primary justify-center whitespace-nowrap text-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary rounded-full text-white shadow-lg dark:bg-primary dark:hover:bg-white dark:hover:text-black dark:text-white  hover:bg-black  hover:text-white"
             >
               <Github />
               <span className="mx-2">Mon Github</span>
