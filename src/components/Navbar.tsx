@@ -15,8 +15,12 @@ export function FloatingNavDemo() {
       name: "About",
       link: "/about",
       icon: (
-        <Button size={"icon"}>
-          <IconUser className="h-4 w-4 bg-primary dark:text-white" />
+        <Button
+          size={"icon"}
+          variant={"link"}
+          className="hover:bg-primary hover:shadow-none dark:bg-white dark:hover:bg-primary"
+        >
+          <IconUser className="h-4 w-4 dark:text-black text-black" />
         </Button>
       ),
     },
@@ -24,8 +28,12 @@ export function FloatingNavDemo() {
       name: "Projects",
       link: "/about",
       icon: (
-        <Button size={"icon"}>
-          <IconApiApp className="h-4 w-4 bg-primary dark:text-white" />
+        <Button
+          size={"icon"}
+          variant={"link"}
+          className="hover:bg-primary hover:shadow-none dark:bg-white dark:hover:bg-primary"
+        >
+          <IconApiApp className="h-4 w-4  text-black dark:text-black " />
         </Button>
       ),
     },
@@ -33,8 +41,12 @@ export function FloatingNavDemo() {
       name: "Contact",
       link: "/contact",
       icon: (
-        <Button size={"icon"}>
-          <IconMessage className="h-4 w-4 bg-primary dark:text-white" />
+        <Button
+          size={"icon"}
+          variant={"link"}
+          className="hover:bg-primary hover:shadow-none dark:bg-white dark:hover:bg-primary"
+        >
+          <IconMessage className="h-4 w-4 text-black dark:text-black" />
         </Button>
       ),
     },

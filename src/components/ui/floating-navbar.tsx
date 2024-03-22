@@ -79,11 +79,7 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
-        {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Login</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </button> */}
-        <Button className="bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white">
+        <Button className=" bg-primary text-white shadow-lg dark:bg-primary dark:hover:bg-white dark:hover:text-black dark:text-white  hover:bg-black  hover:text-white">
           <Mail />
           <span className="mx-3 hidden xl:lg:md:block">Me contacter</span>
         </Button>
