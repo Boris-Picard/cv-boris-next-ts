@@ -74,4 +74,44 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #EF8801;
+    border-radius: 10px;
+  }
+
+  ::-moz-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-moz-scrollbar-thumb {
+    background-color: #EF8801;
+    border-radius: 10px;
+  }
+
+  ::-ms-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-ms-scrollbar-thumb {
+    background-color: #EF8801;
+    border-radius: 10px;
+  }
+
+  ::scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::scrollbar-thumb {
+    background-color: #EF8801;
+    border-radius: 10px;
+  }
 }

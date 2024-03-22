@@ -15,7 +15,7 @@ export default function About() {
         </h2>
       </div>
       <div className="lg:md:flex flex-row flex-1 gap-16">
-        <div className="flex-1 lg:md:text-start text-center">
+        <div className="flex-1 text-start ">
           <p className="lg:md:text-lg font-medium leading-relaxed mb-4">
             Bonjour, je suis Boris, passionné par le numérique et les jeux vidéo
             à Amiens. Diplômé en développement web, j'apprends actuellement{" "}
@@ -43,10 +43,9 @@ export default function About() {
             rapidement. Je suis impatient de mettre mes compétences en pratique
             et de continuer à évoluer en tant que développeur.
           </p>
-          {/* <Skills /> */}
           <Experiences />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex">
           <AspectRatio
             className="lg:md:justify-self-end justify-self-center"
             ratio={16 / 9}
