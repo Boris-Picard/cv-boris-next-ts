@@ -6,6 +6,7 @@ import { Badge } from "./ui/badge";
 import { Github, Link, Linkedin } from "lucide-react";
 import IconLink from "./Link";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+import { Separator } from "./ui/separator";
 
 export default function Projects() {
   const [isHovered1, setIsHovered1] = useState(false);
@@ -22,12 +23,12 @@ export default function Projects() {
         </h2>
       </div>
       <Card className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 flex flex-wrap">
+        <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
               <span className="text-primary font-bold text-xl">01.</span>
               <h3 className="uppercase lg:md:text-2xl text-xl mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
-                Blazerifle
+                Blazerifle.
               </h3>
             </div>
           </CardHeader>
@@ -51,6 +52,7 @@ export default function Projects() {
               <Badge variant="secondary">MySql</Badge>
               <Badge variant="secondary">POO</Badge>
             </div>
+            <Separator className=" bg-slate-300 my-4" />
             <div className="flex justify-center lg:justify-start mt-3 lg:mt-0 space-x-3">
               <IconLink
                 href="https://blazerifle.boris-picard.fr/controllers/home-ctrl.php"
@@ -87,12 +89,12 @@ export default function Projects() {
       </Card>
 
       <Card className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 flex flex-wrap">
+        <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
               <span className="text-primary font-bold text-xl">02.</span>
               <h3 className="uppercase lg:md:text-2xl text-xl mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
-                Rent my ride
+                Rent my ride.
               </h3>
             </div>
           </CardHeader>
@@ -114,6 +116,7 @@ export default function Projects() {
               <Badge variant="secondary">MySql</Badge>
               <Badge variant="secondary">POO</Badge>
             </div>
+            <Separator className=" bg-slate-300 my-4" />
             <div className="flex justify-center lg:justify-start mt-3 lg:mt-0 space-x-3">
               <IconLink href="" icon="Link">
                 Voir le site
@@ -144,12 +147,12 @@ export default function Projects() {
       </Card>
 
       <Card className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 flex flex-wrap">
+        <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
               <span className="text-primary font-bold text-xl">03.</span>
               <h3 className="uppercase lg:md:text-2xl text-xl mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
-                reacttasks
+                reacttasks.
               </h3>
             </div>
           </CardHeader>
@@ -171,6 +174,7 @@ export default function Projects() {
               <Badge variant="secondary">Tailwind</Badge>
               <Badge variant="secondary">NextUI</Badge>
             </div>
+            <Separator className=" bg-slate-300 my-4" />
             <div className="flex justify-center lg:justify-start mt-3 lg:mt-0 space-x-3">
               <IconLink
                 href="https://boris-picard.github.io/todo-list-react/"
@@ -207,12 +211,12 @@ export default function Projects() {
       </Card>
 
       <Card className="flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 flex flex-wrap">
+        <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
               <span className="text-primary font-bold text-xl">04.</span>
               <h3 className="uppercase lg:md:text-2xl text-xl mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
-                cv numerique
+                cv numerique.
               </h3>
             </div>
           </CardHeader>
@@ -231,6 +235,7 @@ export default function Projects() {
               <Badge variant="secondary">Shadcn</Badge>
               <Badge variant="secondary">Aceternity</Badge>
             </div>
+            <Separator className=" bg-slate-300 my-4" />
             <div className="flex justify-center lg:justify-start mt-3 lg:mt-0 space-x-3">
               <IconLink href="/" icon="Link">
                 Voir le site

@@ -66,10 +66,10 @@ export default function About() {
               </h3>
             </div>
             <div className="flex flex-row my-4 justify-center lg:md:justify-start space-x-3">
-              <span className="hover:text-primary dark:hover:text-white dark:text-primary hover:shadow-0 cursor-pointer">
+              <span className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer">
                 <Linkedin />
               </span>
-              <span className="hover:text-primary dark:hover:text-white dark:text-primary hover:shadow-0 cursor-pointer">
+              <span className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer">
                 <Mail />
               </span>
             </div>
