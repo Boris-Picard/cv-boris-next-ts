@@ -21,7 +21,7 @@ export default function Experiences() {
             Formations.
           </h3>
         </div>
-        <Card className="p-0 mb-3">
+        <Card className="p-0 mb-3 shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-medium px-4">
               LA MANU (2023-2024){" "}

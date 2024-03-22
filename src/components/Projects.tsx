@@ -22,7 +22,7 @@ export default function Projects() {
           projets.
         </h2>
       </div>
-      <Card className="flex flex-col lg:flex-row">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
@@ -47,6 +47,7 @@ export default function Projects() {
             <div className="flex flex-wrap gap-3 my-3">
               <Badge variant="secondary">HTML</Badge>
               <Badge variant="secondary">CSS</Badge>
+              <Badge variant="secondary">Bootstrap</Badge>
               <Badge variant="secondary">Javascript</Badge>
               <Badge variant="secondary">PHP</Badge>
               <Badge variant="secondary">MySql</Badge>
@@ -77,7 +78,6 @@ export default function Projects() {
           <AspectRatio ratio={16 / 9}>
             <Image
               src={"/assets/gif-blazerifle.gif"}
-              sizes="100vw"
               fill={true}
               quality={75}
               loading="lazy"
@@ -90,7 +90,7 @@ export default function Projects() {
         </div>
       </Card>
 
-      <Card className="flex flex-col lg:flex-row">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
@@ -113,6 +113,7 @@ export default function Projects() {
             <div className="flex flex-wrap gap-3 my-3">
               <Badge variant="secondary">HTML</Badge>
               <Badge variant="secondary">CSS</Badge>
+              <Badge variant="secondary">Bootstrap</Badge>
               <Badge variant="secondary">Javascript</Badge>
               <Badge variant="secondary">PHP</Badge>
               <Badge variant="secondary">MySql</Badge>
@@ -135,7 +136,6 @@ export default function Projects() {
             <Image
               src={"/assets/gif-rent-my-ride.gif"}
               fill={true}
-              sizes="100vw"
               quality={75}
               loading="lazy"
               alt="rent my ride website"
@@ -147,7 +147,7 @@ export default function Projects() {
         </div>
       </Card>
 
-      <Card className="flex flex-col lg:flex-row">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
@@ -202,7 +202,6 @@ export default function Projects() {
               src={"/assets/gif-reacttasks.gif"}
               fill={true}
               quality={75}
-              sizes="100vw"
               loading="lazy"
               alt="reacttasks website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
@@ -213,7 +212,7 @@ export default function Projects() {
         </div>
       </Card>
 
-      <Card className="flex flex-col lg:flex-row">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
@@ -257,7 +256,6 @@ export default function Projects() {
               fill={true}
               quality={75}
               loading="lazy"
-              sizes="100vw"
               alt="cv numérique website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
                 isHovered4 ? "scale-110" : ""
