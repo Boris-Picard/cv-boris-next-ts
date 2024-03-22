@@ -1,3 +1,11 @@
+import {
+  Card,
+  CardHeader,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from "./ui/card";
+
 export default function Contact() {
   return (
     <>
@@ -7,6 +15,13 @@ export default function Contact() {
           Contact.
         </h2>
       </div>
+      <Card>
+        <CardHeader>
+          <CardDescription></CardDescription>
+        </CardHeader>
+        <CardContent></CardContent>
+        <CardFooter></CardFooter>
+      </Card>
     </>
   );
 }

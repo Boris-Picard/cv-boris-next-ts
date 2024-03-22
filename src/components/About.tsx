@@ -66,12 +66,19 @@ export default function About() {
               </h3>
             </div>
             <div className="flex flex-row my-4 justify-center lg:md:justify-start space-x-3">
-              <span className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer">
+              <a
+                href="https://www.linkedin.com/in/boris-picard-2906029b/"
+                target="_blank"
+                className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer"
+              >
                 <Linkedin />
-              </span>
-              <span className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer">
+              </a>
+              <a
+                href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%62%6F%72%69%73%2D%70%69%63%61%72%64%2E%66%72"
+                className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer"
+              >
                 <Mail />
-              </span>
+              </a>
             </div>
           </AspectRatio>
         </div>

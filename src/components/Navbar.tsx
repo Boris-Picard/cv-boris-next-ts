@@ -13,7 +13,7 @@ export function FloatingNavDemo() {
   const navItems = [
     {
       name: "About",
-      link: "/about",
+      link: "#about",
       icon: (
         <Button
           size={"icon"}
@@ -26,7 +26,7 @@ export function FloatingNavDemo() {
     },
     {
       name: "Projects",
-      link: "/about",
+      link: "#projects",
       icon: (
         <Button
           size={"icon"}
@@ -39,7 +39,7 @@ export function FloatingNavDemo() {
     },
     {
       name: "Contact",
-      link: "/contact",
+      link: "#contact",
       icon: (
         <Button
           size={"icon"}
