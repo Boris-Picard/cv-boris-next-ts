@@ -118,9 +118,6 @@ export default function Projects() {
             </div>
             <Separator className=" bg-slate-300 my-4" />
             <div className="flex justify-center lg:justify-start mt-3 lg:mt-0 space-x-3">
-              <IconLink href="" icon="Link">
-                Voir le site
-              </IconLink>
               <IconLink href="" icon="Github">
                 Code
               </IconLink>
@@ -134,7 +131,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/img/rent-my-ride.png"}
+              src={"/img/gif-rent-my-ride.gif"}
               fill={true}
               quality={75}
               alt="rent my ride website"
@@ -198,7 +195,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/img/reacttasks.png"}
+              src={"/img/gif-reacttasks.gif"}
               fill={true}
               quality={75}
               alt="reacttasks website"
@@ -237,9 +234,6 @@ export default function Projects() {
             </div>
             <Separator className=" bg-slate-300 my-4" />
             <div className="flex justify-center lg:justify-start mt-3 lg:mt-0 space-x-3">
-              <IconLink href="/" icon="Link">
-                Voir le site
-              </IconLink>
               <IconLink href="/" icon="Github">
                 Code
               </IconLink>
@@ -253,7 +247,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/img/cv-numerique.png"}
+              src={"/img/gif-cv.gif"}
               fill={true}
               quality={75}
               alt="cv numérique website"
