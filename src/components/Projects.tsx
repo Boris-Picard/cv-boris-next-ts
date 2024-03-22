@@ -76,7 +76,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/img/gif-blazerifle.gif"}
+              src={"/assets/gif-blazerifle.gif"}
               fill={true}
               quality={75}
               alt="blazerifle website"
@@ -131,7 +131,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/img/gif-rent-my-ride.gif"}
+              src={"/assets/gif-rent-my-ride.gif"}
               fill={true}
               quality={75}
               alt="rent my ride website"
@@ -195,7 +195,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/img/gif-reacttasks.gif"}
+              src={"/assets/gif-reacttasks.gif"}
               fill={true}
               quality={75}
               alt="reacttasks website"
@@ -247,7 +247,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/img/gif-cv.gif"}
+              src={"/assets/gif-cv.gif"}
               fill={true}
               quality={75}
               alt="cv numérique website"
