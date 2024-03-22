@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import { Badge } from "./ui/badge";
-import { Github, Link, Linkedin } from "lucide-react";
 import IconLink from "./Link";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { Separator } from "./ui/separator";
@@ -77,7 +76,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/assets/gif-blazerifle.gif"}
+              src="/assets/gif-blazerifle.gif"
               fill={true}
               quality={75}
               loading="lazy"
@@ -134,7 +133,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/assets/gif-rent-my-ride.gif"}
+              src="/assets/gif-rent-my-ride.gif"
               fill={true}
               quality={75}
               loading="lazy"
@@ -199,7 +198,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/assets/gif-reacttasks.gif"}
+              src="/assets/gif-reacttasks.gif"
               fill={true}
               quality={75}
               loading="lazy"
@@ -252,7 +251,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/assets/gif-cv.gif"}
+              src="/assets/gif-cv.gif"
               fill={true}
               quality={75}
               loading="lazy"

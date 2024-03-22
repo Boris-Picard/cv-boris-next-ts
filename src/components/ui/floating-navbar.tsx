@@ -80,6 +80,7 @@ export const FloatingNav = ({
           </Link>
         ))}
         <a
+          aria-label="Mail"
           href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%62%6F%72%69%73%2D%70%69%63%61%72%64%2E%66%72"
           className="inline-flex items-center p-2 dark:hover:text-primary justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary rounded-full text-white shadow-lg dark:bg-primary dark:hover:bg-white dark:hover:text-black dark:text-white  hover:bg-black  hover:text-white"
         >

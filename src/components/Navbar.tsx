@@ -12,10 +12,11 @@ import { Button } from "./ui/button";
 export function FloatingNavDemo() {
   const navItems = [
     {
-      name: "About",
+      name: "A Propos",
       link: "#about",
       icon: (
         <Button
+          aria-label="About"
           size={"icon"}
           variant={"link"}
           className="hover:bg-primary hover:shadow-none dark:bg-white dark:hover:bg-primary"
@@ -25,10 +26,11 @@ export function FloatingNavDemo() {
       ),
     },
     {
-      name: "Projects",
+      name: "Projets",
       link: "#projects",
       icon: (
         <Button
+          aria-label="Projects"
           size={"icon"}
           variant={"link"}
           className="hover:bg-primary hover:shadow-none dark:bg-white dark:hover:bg-primary"
@@ -42,6 +44,7 @@ export function FloatingNavDemo() {
       link: "#contact",
       icon: (
         <Button
+          aria-label="Contact"
           size={"icon"}
           variant={"link"}
           className="hover:bg-primary hover:shadow-none dark:bg-white dark:hover:bg-primary"
