@@ -76,7 +76,7 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src={"/img/blazerifle-preview.png"}
+              src={"/img/gif-blazerifle.gif"}
               fill={true}
               quality={75}
               alt="blazerifle website"
