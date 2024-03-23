@@ -78,6 +78,7 @@ export default function Projects() {
             <Image
               src="/assets/gif-blazerifle.gif"
               fill={true}
+              unoptimized
               quality={75}
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
@@ -121,7 +122,10 @@ export default function Projects() {
             </div>
             <Separator className=" bg-slate-300 my-4" />
             <div className="flex justify-center lg:justify-start mt-3 lg:mt-0 space-x-3">
-              <IconLink href="" icon="Github">
+              <IconLink
+                href="https://github.com/Boris-Picard/rent-my-ride"
+                icon="Github"
+              >
                 Code
               </IconLink>
             </div>
@@ -137,6 +141,7 @@ export default function Projects() {
               src="/assets/gif-rent-my-ride.gif"
               fill={true}
               quality={75}
+              unoptimized
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="rent my ride website"
@@ -203,6 +208,7 @@ export default function Projects() {
               src="/assets/gif-reacttasks.gif"
               fill={true}
               quality={75}
+              unoptimized
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="reacttasks website"
@@ -241,7 +247,10 @@ export default function Projects() {
             </div>
             <Separator className=" bg-slate-300 my-4" />
             <div className="flex justify-center lg:justify-start mt-3 lg:mt-0 space-x-3">
-              <IconLink href="/" icon="Github">
+              <IconLink
+                href="https://github.com/Boris-Picard/cv-boris-next-ts"
+                icon="Github"
+              >
                 Code
               </IconLink>
             </div>
@@ -257,6 +266,7 @@ export default function Projects() {
               src="/assets/gif-cv.gif"
               fill={true}
               quality={75}
+              unoptimized
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="cv numérique website"

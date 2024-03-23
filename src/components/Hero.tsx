@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Button } from "./ui/button";
 import { MeteorsDemo } from "./MeteorsHero";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
@@ -25,7 +24,9 @@ export function Hero() {
               as="button"
               className="px-12 mx-auto lg:md:p-4 p-3 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white"
             >
-              <span>Télécharger mon cv</span>
+              <a href="/assets/CV-PICARD-BORIS.pdf" target="_blank">
+                Télécharger mon cv
+              </a>
             </HoverBorderGradient>
           </div>
         </div>
