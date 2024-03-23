@@ -25,9 +25,6 @@ export function Hero() {
               as="button"
               className="px-12 mx-auto py-6 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white"
             >
-              {/* <Button className="px-12 mx-auto py-8 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white">
-                Télécharger mon cv
-              </Button> */}
               <span>Télécharger mon cv</span>
             </HoverBorderGradient>
           </div>

@@ -20,7 +20,7 @@ export default function Contact() {
       <Card className="flex xl:lg:md:p-24 shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
         <CardHeader></CardHeader>
         <CardContent className="space-y-6">
-          <h2 className="text-3xl font-bold">
+          <h2 className="xl:lg:md:text-3xl text-2xl font-bold">
             Ouvert aux opportunités de collaboration et de développement
             professionnel.
           </h2>
