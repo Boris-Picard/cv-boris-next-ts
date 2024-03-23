@@ -124,6 +124,7 @@ export default function Skills() {
               height={logo.height}
               loading="lazy"
               quality={75}
+              style={{ width: "30px", height: "30px" }}
             />
             <p className="mt-2">{logo.name}</p>
           </div>

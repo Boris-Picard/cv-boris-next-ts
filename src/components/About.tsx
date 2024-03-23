@@ -44,43 +44,39 @@ export default function About() {
           </p>
           <Experiences />
         </div>
-        <div className="flex-1 flex">
-          <AspectRatio
-            className="lg:md:justify-self-end justify-self-center"
-            ratio={16 / 9}
-          >
-            <Image
-              src={"./PP.jpg"}
-              alt="Profil Picture"
-              className="rounded-3xl object-cover"
-              width={450}
-              height={450}
-              loading="lazy"
-            />
-            <div className="flex items-center mt-4">
-              <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
-              <h3 className="uppercase lg:md:text-2xl text-xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
-                Me contacter.
-              </h3>
-            </div>
-            <div className="flex flex-row my-4 justify-center lg:md:justify-start space-x-3">
-              <a
-                aria-label="Mail"
-                href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%62%6F%72%69%73%2D%70%69%63%61%72%64%2E%66%72"
-                className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer"
-              >
-                <Mail />
-              </a>
-              <a
-                aria-label="Linkedin"
-                href="https://www.linkedin.com/in/boris-picard-2906029b/"
-                target="_blank"
-                className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer"
-              >
-                <Linkedin />
-              </a>
-            </div>
-          </AspectRatio>
+        <div className="flex-1 flex flex-col items-end justify-center">
+          <Image
+            src={"/assets/PP.jpg"}
+            alt="Profil Picture"
+            className="rounded-3xl object-cover"
+            width={450}
+            height={450}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            loading="lazy"
+          />
+          <div className="flex items-center mt-4">
+            <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
+            <h3 className="uppercase lg:md:text-2xl text-xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
+              Me contacter.
+            </h3>
+          </div>
+          <div className="flex flex-row my-4 justify-center lg:md:justify-start space-x-3">
+            <a
+              aria-label="Mail"
+              href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%62%6F%72%69%73%2D%70%69%63%61%72%64%2E%66%72"
+              className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer"
+            >
+              <Mail />
+            </a>
+            <a
+              aria-label="Linkedin"
+              href="https://www.linkedin.com/in/boris-picard-2906029b/"
+              target="_blank"
+              className="hover:text-primary dark:hover:text-primary dark:text-white hover:shadow-0 cursor-pointer"
+            >
+              <Linkedin />
+            </a>
+          </div>
         </div>
       </div>
     </>

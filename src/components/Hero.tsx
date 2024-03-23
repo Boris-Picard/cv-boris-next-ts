@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { MeteorsDemo } from "./MeteorsHero";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 export function Hero() {
   return (
@@ -19,9 +20,16 @@ export function Hero() {
             Développeur <span className="text-primary">Web</span>
           </span>
           <div className="flex lg:block md:block">
-            <Button className="px-12 mx-auto py-8 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white">
-              Télécharger mon cv
-            </Button>
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="px-12 mx-auto py-6 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white"
+            >
+              {/* <Button className="px-12 mx-auto py-8 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white">
+                Télécharger mon cv
+              </Button> */}
+              <span>Télécharger mon cv</span>
+            </HoverBorderGradient>
           </div>
         </div>
       </div>
