@@ -21,7 +21,7 @@ export default function Projects() {
           projets.
         </h2>
       </div>
-      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] xl:lg:md:mb-4">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
@@ -80,6 +80,7 @@ export default function Projects() {
               fill={true}
               quality={75}
               loading="lazy"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="blazerifle website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
                 isHovered1 ? "scale-110" : ""
@@ -89,7 +90,7 @@ export default function Projects() {
         </div>
       </Card>
 
-      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] xl:lg:md:mb-4">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
@@ -137,6 +138,7 @@ export default function Projects() {
               fill={true}
               quality={75}
               loading="lazy"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="rent my ride website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
                 isHovered2 ? "scale-110" : ""
@@ -146,7 +148,7 @@ export default function Projects() {
         </div>
       </Card>
 
-      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] xl:lg:md:mb-4">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
@@ -202,6 +204,7 @@ export default function Projects() {
               fill={true}
               quality={75}
               loading="lazy"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="reacttasks website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
                 isHovered3 ? "scale-110" : ""
@@ -255,6 +258,7 @@ export default function Projects() {
               fill={true}
               quality={75}
               loading="lazy"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="cv numérique website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
                 isHovered4 ? "scale-110" : ""
