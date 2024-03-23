@@ -14,7 +14,7 @@ export default function Experiences() {
   return (
     <>
       <Accordion type="single" collapsible className="w-full">
-        <Separator className="my-4 bg-slate-300" />
+        <Separator className="my-10 bg-slate-300" />
         <div className="flex items-center my-3">
           <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
           <h3 className="uppercase lg:md:text-2xl text-xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">
@@ -50,7 +50,7 @@ export default function Experiences() {
           </AccordionItem>
         </Card>
       </Accordion>
-      <Separator className="my-4 mt-6 bg-slate-300" />
+      <Separator className="my-10  bg-slate-300" />
       <div className="flex items-center my-3">
         <span className="lg:md:w-14 rounded-full hidden lg:md:block h-2 bg-primary border-0 self-center" />
         <h3 className="uppercase lg:md:text-2xl text-xl mx-auto lg:md:mx-16 lg:md:text-start text-center font-extrabold tracking-wide dark:text-white">

@@ -19,11 +19,11 @@ export function Hero() {
           <span className="uppercase dark:text-white font-bold text-center lg:text-start lg:text-2xl text-xl">
             Développeur <span className="text-primary">Web</span>
           </span>
-          <div className="flex lg:block md:block justify-center">
+          <div className="flex lg:block  justify-center">
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
-              className="px-12 mx-auto lg:md:p-6 p-3 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white"
+              className="px-12 mx-auto lg:md:p-4 p-3 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white"
             >
               <span>Télécharger mon cv</span>
             </HoverBorderGradient>

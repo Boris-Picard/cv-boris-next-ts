@@ -21,7 +21,7 @@ export default function Projects() {
           projets.
         </h2>
       </div>
-      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] xl:lg:md:mb-4">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] lg:md:mb-10">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
@@ -90,7 +90,7 @@ export default function Projects() {
         </div>
       </Card>
 
-      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] xl:lg:md:mb-4">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] lg:md:mb-10">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
@@ -148,7 +148,7 @@ export default function Projects() {
         </div>
       </Card>
 
-      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] xl:lg:md:mb-4">
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] lg:md:mb-10">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
