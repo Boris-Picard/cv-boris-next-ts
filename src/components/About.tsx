@@ -48,6 +48,7 @@ export default function About() {
             src={"/assets/PP.jpg"}
             alt="Profil Picture"
             className="rounded-3xl z-50 object-cover"
+            unoptimized
             width={450}
             height={450}
             sizes="(max-width: 768px) 100vw, 50vw"
