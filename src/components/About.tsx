@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import Experiences from "./Experiences";
 import { Linkedin, Mail } from "lucide-react";
 
@@ -48,7 +47,7 @@ export default function About() {
           <Image
             src={"/assets/PP.jpg"}
             alt="Profil Picture"
-            className="rounded-3xl object-cover"
+            className="rounded-3xl z-50 object-cover"
             width={450}
             height={450}
             sizes="(max-width: 768px) 100vw, 50vw"

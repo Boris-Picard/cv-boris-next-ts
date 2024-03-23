@@ -1,12 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-import {
-  Card,
-  CardHeader,
-  CardDescription,
-  CardContent,
-  CardFooter,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardHeader, CardContent, CardFooter } from "./ui/card";
 
 export default function Contact() {
   return (
@@ -17,15 +10,15 @@ export default function Contact() {
           Contact.
         </h2>
       </div>
-      <Card className="flex xl:lg:md:p-24 shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
+      <Card className="flex lg:md:p-24 shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
         <CardHeader></CardHeader>
         <CardContent className="space-y-6">
-          <h2 className="xl:lg:md:text-3xl text-2xl font-bold">
+          <h2 className="lg:md:text-3xl text-2xl font-bold">
             Ouvert aux opportunités de collaboration et de développement
             professionnel.
           </h2>
           <p className="font-medium">N'hésitez pas à me contacter !</p>
-          <div className="flex-col flex xl:lg:w-1/5 md:w-1/4 space-y-6">
+          <div className="flex-col flex lg:w-1/5 md:w-1/4 space-y-6">
             <a
               aria-label="Mail"
               href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%62%6F%72%69%73%2D%70%69%63%61%72%64%2E%66%72"
