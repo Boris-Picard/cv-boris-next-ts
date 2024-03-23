@@ -7,6 +7,7 @@ import { Hero } from "@/components/Hero";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Montserrat } from "next/font/google";
 import Glowing from "@/components/GlowingCircle";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +17,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Boris Picard",
-  description: "Développeur web et web mobile",
+  title:
+    "Boris Picard - Développeur Web et Mobile | Expert en Développement Front-end et Back-end",
+  description:
+    "Boris Picard, développeur web et web mobile avec une expertise en développement front-end et back-end. Contactez-moi pour des solutions de développement web et mobile de haute qualité.",
 };
 
 export default function RootLayout({
@@ -27,7 +30,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <meta
+        name="google-site-verification"
+        content="5cxFq3lqxtaMoWNJJ4OyXuYB9eS70IsEYKhhdjRI7ek"
+      />
+      <Script
+        id="gtm-script"
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WB5LCNT5');`,
+        }}
+      />
       <body className={montserrat.className}>
+        <Script
+          id="gtag-script"
+          src={`https://www.googletagmanager.com/gtag/js?id=GTM-WB5LCNT5`}
+          strategy="afterInteractive"
+        />
         <Glowing />
         <ThemeProvider
           attribute="class"

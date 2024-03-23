@@ -37,3 +37,7 @@ next-env.d.ts
 
 #img
 public/
+
+#google
+google1484f5a82c7c6491.html
+src/app/layout.tsx
