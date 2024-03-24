@@ -16,7 +16,8 @@ export function Hero() {
             boris picard.
           </h1>
           <span className="uppercase dark:text-white font-bold text-center lg:text-start lg:text-2xl text-xl">
-            Développeur <span className="text-primary">Web</span>
+            Développeur <span className="text-primary">Web</span> et Web{" "}
+            <span className="text-primary">Mobile</span>
           </span>
           <div className="flex lg:block  justify-center">
             <HoverBorderGradient
