@@ -15,8 +15,9 @@ export default function About() {
       <div className="lg:md:flex flex-row flex-1">
         <div className="flex-1 text-start ">
           <p className="lg:md:text-md font-medium leading-relaxed mb-4">
-            Bonjour, je suis Boris, passionné par le numérique et les jeux vidéo
-            à Amiens. Diplômé en développement web, j'apprends actuellement{" "}
+            Bonjour ! Je suis Boris, un passionné du numérique et des jeux vidéo
+            basé à Amiens. Titulaire d'un diplôme en développement web, je me
+            perfectionne actuellement dans des technologies telles que{" "}
             <span className="text-primary font-bold">React,</span>{" "}
             <span className="text-primary font-bold">Next.js,</span>{" "}
             <span className="text-primary font-bold">Node.js</span> et{" "}
@@ -35,11 +36,13 @@ export default function About() {
           </p>
           <p className="lg:md:text-md font-medium leading-relaxed mb-12">
             Mon objectif est de devenir développeur{" "}
-            <span className="text-primary font-bold">full-stack</span> pour
-            créer des sites web fonctionnels et esthétiquement plaisants. Mon
-            expérience antérieure dans les jeux vidéo m'a appris à m'adapter
-            rapidement. Je suis impatient de mettre mes compétences en pratique
-            et de continuer à évoluer en tant que développeur.
+            <span className="text-primary font-bold">full-stack</span> capable
+            de concevoir des sites web à la fois fonctionnels et esthétiquement
+            attrayants. Ma capacité à m'adapter rapidement, acquise grâce à mon
+            expérience antérieure dans les jeux vidéo, constitue un atout
+            précieux dans mon parcours. Je suis enthousiaste à l'idée de mettre
+            en pratique mes compétences et de poursuivre mon évolution en tant
+            que développeur.
           </p>
           <Experiences />
         </div>
