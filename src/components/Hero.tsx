@@ -26,7 +26,7 @@ export function Hero() {
               className="px-12 mx-auto lg:md:p-4 p-3 rounded-full tracking-widest uppercase transition duration-200 bg-primary text-white font-semibold shadow-lg hover:shadow-lg hover:bg-black hover:text-white"
             >
               <a href="/assets/CV-PICARD-BORIS.pdf" target="_blank">
-                Télécharger mon cv
+                accéder à mon cv
               </a>
             </HoverBorderGradient>
           </div>
