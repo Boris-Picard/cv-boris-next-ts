@@ -46,7 +46,7 @@ export default function Skills() {
     },
     {
       name: "Astro",
-      src: "assets/astro.svg",
+      src: "assets/Astro.svg",
       alt: "astro logo",
       class: "dark:invert",
       width: 30,
