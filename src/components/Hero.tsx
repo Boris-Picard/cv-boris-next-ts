@@ -2,8 +2,10 @@
 import React from "react";
 import { MeteorsDemo } from "./MeteorsHero";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import { FlipWords } from "./ui/filp-words";
 
 export function Hero() {
+  const words = ["Full-Stack", "Front-End", "Back-End"];
   return (
     <section
       id="hero"
@@ -16,8 +18,9 @@ export function Hero() {
             boris picard.
           </h1>
           <span className="uppercase dark:text-white font-bold text-center lg:text-start lg:text-2xl text-xl">
-            Développeur <span className="text-primary">Web</span> et Web{" "}
-            <span className="text-primary">Mobile</span>
+            Développeur <span className="text-primary">Web</span> et Web Mobile
+            |
+            <FlipWords words={words} />
           </span>
           <div className="flex lg:block  justify-center">
             <HoverBorderGradient
