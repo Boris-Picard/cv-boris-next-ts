@@ -12,13 +12,16 @@ export default function Contact() {
       </div>
       <Card className="flex lg:md:p-24 shadow-lg bg-[#F8F8FF] dark:bg-[#212529]">
         <CardHeader></CardHeader>
-        <CardContent className="space-y-6">
-          <h2 className="lg:md:text-3xl text-2xl font-bold">
+        <CardContent className="space-y-10 overflow-hidden">
+          <h2 className="lg:md:text-5xl text-3xl font-extrabold">
             Ouvert aux opportunités de collaboration et de développement
             professionnel.
           </h2>
-          <p className="font-medium">N'hésitez pas à me contacter !</p>
-          <div className="flex-col flex lg:w-1/5 md:w-1/4 space-y-6">
+          <p className="font-medium text-xl">
+            N'hésitez pas à me contacter pour toute collaboration ou pour
+            obtenir des renseignements supplémentaires.
+          </p>
+          <div className="lg:w-1/5 md:w-1/4 md:space-x-3 flex flex-col space-y-3 md:flex-row md:space-y-0 sm:w-1/3">
             <a
               aria-label="Mail"
               href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%62%6F%72%69%73%2D%70%69%63%61%72%64%2E%66%72"
