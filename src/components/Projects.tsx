@@ -35,16 +35,17 @@ export default function Projects() {
           </CardHeader>
           <CardContent className="p-0 mb-3 xl:lg:md:mb-0">
             <p className=" leading-relaxed font-medium py-3 text-balance">
-              Développement complet d'un site de suivi d'investissements en
+              Développement d'un site de suivi d'investissements en
               cryptomonnaies avec React, Node.js, Express et MongoDB. Gestion
-              des utilisateurs avec inscription, connexion sécurisée (JWT,
-              cookies) et réinitialisation de mot de passe (Nodemailer). Suivi
+              des utilisateurs (inscription, connexion sécurisée avec JWT et
+              cookies, réinitialisation de mot de passe via Nodemailer). Suivi
               en temps réel des prix de plus de 14 000 cryptomonnaies (API
-              CoinGecko). Calculs dynamiques des coûts, valeurs actuelles,
-              profits et pertes. Sécurité renforcée : hachage des mots de passe
-              (Argon2), limitation des requêtes (express-rate-limit). Tests
-              unitaires avec Jest et validation des données avec Zod et Joi.
-              Mise en ligne sur Render.com avec domaine personnalisé Hostinger.
+              CoinGecko), calculs dynamiques (coûts, valeurs actuelles, profits
+              et pertes). Gestion d'état globale avec Zustand. Sécurité
+              renforcée (hachage des mots de passe avec Argon2, limitation des
+              requêtes avec express-rate-limit). Tests unitaires (Jest),
+              validation des données (Zod, Joi). Déploiement sur Render.com avec
+              domaine personnalisé Hostinger.
             </p>
           </CardContent>
           <CardFooter className="flex justify-between">
