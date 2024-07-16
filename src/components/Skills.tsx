@@ -75,7 +75,7 @@ export default function Skills() {
     },
     {
       name: "Jest",
-      src: "assets/jest.svg",
+      src: "assets/Jest.svg",
       alt: "jest logo",
       width: 30,
       height: 30,
