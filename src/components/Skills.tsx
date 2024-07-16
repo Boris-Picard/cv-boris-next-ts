@@ -2,23 +2,6 @@ import Image from "next/image";
 export default function Skills() {
   const logos = [
     {
-      id: 1,
-      name: "Html",
-      src: "assets/html-1.svg",
-      alt: "html logo",
-      width: 30,
-      height: 30,
-    },
-    {
-      id: 2,
-      name: "Css",
-      src: "assets/css-3.svg",
-      alt: "css logo",
-      width: 30,
-      height: 30,
-    },
-    {
-      id: 3,
       name: "Javascript",
       src: "assets/logo-javascript.svg",
       alt: "JS logo",
@@ -26,7 +9,6 @@ export default function Skills() {
       height: 30,
     },
     {
-      id: 4,
       name: "Typescript",
       src: "assets/typescript.svg",
       alt: "Typescript logo",
@@ -34,7 +16,6 @@ export default function Skills() {
       height: 30,
     },
     {
-      id: 5,
       name: "PHP",
       src: "assets/php-1.svg",
       alt: "PHP logo",
@@ -42,7 +23,13 @@ export default function Skills() {
       height: 30,
     },
     {
-      id: 6,
+      name: "NodeJs",
+      src: "assets/nodejs-icon.svg",
+      alt: "NodeJs logo",
+      width: 30,
+      height: 30,
+    },
+    {
       name: "React",
       src: "assets/react-2.svg",
       alt: "React logo",
@@ -50,7 +37,6 @@ export default function Skills() {
       height: 30,
     },
     {
-      id: 7,
       name: "Nextjs",
       src: "assets/next-js.svg",
       alt: "Nextjs logo",
@@ -59,7 +45,14 @@ export default function Skills() {
       class: "dark:invert",
     },
     {
-      id: 8,
+      name: "Astro",
+      src: "assets/astro.svg",
+      alt: "astro logo",
+      class: "dark:invert",
+      width: 30,
+      height: 30,
+    },
+    {
       name: "MySql",
       src: "assets/mysql-logo.svg",
       alt: "MySql logo",
@@ -67,7 +60,13 @@ export default function Skills() {
       height: 30,
     },
     {
-      id: 9,
+      name: "PostgreSQL ",
+      src: "assets/PostgresSQL.svg",
+      alt: "PostgreSQL logo",
+      width: 30,
+      height: 30,
+    },
+    {
       name: "MongoDB",
       src: "assets/mongodb-icon-1.svg",
       alt: "MongoDB logo",
@@ -75,15 +74,13 @@ export default function Skills() {
       height: 30,
     },
     {
-      id: 10,
-      name: "NodeJs",
-      src: "assets/nodejs-icon.svg",
-      alt: "NodeJs logo",
+      name: "Jest",
+      src: "assets/jest.svg",
+      alt: "jest logo",
       width: 30,
       height: 30,
     },
     {
-      id: 11,
       name: "Docker",
       src: "assets/docker.svg",
       alt: "Docker logo",
@@ -91,7 +88,6 @@ export default function Skills() {
       height: 30,
     },
     {
-      id: 12,
       name: "Git & Github",
       src: "assets/git-icon.svg",
       alt: "Git & Github logo",
@@ -99,7 +95,6 @@ export default function Skills() {
       height: 30,
     },
     {
-      id: 13,
       name: "Figma",
       src: "assets/figma-5.svg",
       alt: "Figma logo",
@@ -111,9 +106,9 @@ export default function Skills() {
   return (
     <>
       <div className="flex lg:md:justify-between justify-center items-end flex-wrap">
-        {logos.map((logo) => (
+        {logos.map((logo, index) => (
           <div
-            key={logo.id}
+            key={index}
             className="flex flex-col items-center m-4 w-1/3 lg:md:w-auto"
           >
             <Image
