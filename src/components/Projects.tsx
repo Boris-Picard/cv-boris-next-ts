@@ -12,6 +12,7 @@ export default function Projects() {
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
   const [isHovered4, setIsHovered4] = useState(false);
+  const [isHovered5, setIsHovered5] = useState(false);
 
   return (
     <>
@@ -21,11 +22,92 @@ export default function Projects() {
           projets.
         </h2>
       </div>
+
       <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] lg:md:mb-10">
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
               <span className="text-primary font-bold text-xl">01.</span>
+              <h3 className="uppercase lg:md:text-2xl text-xl mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
+                myCryptoFolio.
+              </h3>
+            </div>
+          </CardHeader>
+          <CardContent className="p-0 mb-3 xl:lg:md:mb-0">
+            <p className=" leading-relaxed font-medium py-3 text-balance">
+              Développement complet d'un site de suivi d'investissements en
+              cryptomonnaies avec React, Node.js, Express et MongoDB. Gestion
+              des utilisateurs avec inscription, connexion sécurisée (JWT,
+              cookies) et réinitialisation de mot de passe (Nodemailer). Suivi
+              en temps réel des prix de plus de 14 000 cryptomonnaies (API
+              CoinGecko). Calculs dynamiques des coûts, valeurs actuelles,
+              profits et pertes. Sécurité renforcée : hachage des mots de passe
+              (Argon2), limitation des requêtes (express-rate-limit). Tests
+              unitaires avec Jest et validation des données avec Zod et Joi.
+              Mise en ligne sur Render.com avec domaine personnalisé Hostinger.
+            </p>
+          </CardContent>
+          <CardFooter className="flex justify-between">
+            <div className="flex flex-wrap gap-3 my-3">
+              <Badge variant="secondary">React</Badge>
+              <Badge variant="secondary">Node.js</Badge>
+              <Badge variant="secondary">Express</Badge>
+              <Badge variant="secondary">MongoDB</Badge>
+              <Badge variant="secondary">JWT</Badge>
+              <Badge variant="secondary">Argon2</Badge>
+              <Badge variant="secondary">Nodemailer</Badge>
+              <Badge variant="secondary">Tailwind </Badge>
+              <Badge variant="secondary">Zustand</Badge>
+              <Badge variant="secondary">Zod</Badge>
+              <Badge variant="secondary">Joi</Badge>
+            </div>
+            <Separator className=" bg-slate-300 my-4" />
+            <div className="flex justify-center lg:justify-start mt-3 lg:mt-0 space-x-3">
+              <IconLink href="https://mycryptofolio.site/" icon="Link">
+                Voir le site
+              </IconLink>
+              <IconLink
+                href="https://github.com/Boris-Picard/mycryptofolio"
+                icon="Github"
+              >
+                Code (Front)
+              </IconLink>
+              <IconLink
+                href="https://github.com/Boris-Picard/mycryptofolio-backend"
+                icon="Github"
+              >
+                Code (Back)
+              </IconLink>
+            </div>
+          </CardFooter>
+        </div>
+        <div
+          className="lg:w-1/2 overflow-hidden mt-6 lg:mt-0 rounded-3xl flex"
+          onMouseEnter={() => setIsHovered1(true)}
+          onMouseLeave={() => setIsHovered1(false)}
+        >
+          <AspectRatio ratio={16 / 9}>
+            <Image
+              src="/assets/mycryptofolio.gif"
+              fill={true}
+              unoptimized
+              quality={75}
+              loading="lazy"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
+              alt="blazerifle website"
+              className={`object-cover rounded-3xl transition-all duration-500  ${
+                isHovered1 ? "scale-110" : ""
+              }`}
+            />
+          </AspectRatio>
+        </div>
+      </Card>
+
+      <Card className="flex flex-col lg:flex-row shadow-lg bg-[#F8F8FF] dark:bg-[#212529] lg:md:mb-10">
+        <div className="lg:w-1/2 flex flex-wrap mr-3">
+          <CardHeader className="my-3 xl:lg:md:my-0">
+            <div className="flex items-center">
+              <span className="text-primary font-bold text-xl">02.</span>
               <h3 className="uppercase lg:md:text-2xl text-xl mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
                 Blazerifle.
               </h3>
@@ -71,8 +153,8 @@ export default function Projects() {
         </div>
         <div
           className="lg:w-1/2 overflow-hidden mt-6 lg:mt-0 rounded-3xl flex"
-          onMouseEnter={() => setIsHovered1(true)}
-          onMouseLeave={() => setIsHovered1(false)}
+          onMouseEnter={() => setIsHovered2(true)}
+          onMouseLeave={() => setIsHovered2(false)}
         >
           <AspectRatio ratio={16 / 9}>
             <Image
@@ -84,7 +166,7 @@ export default function Projects() {
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="blazerifle website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
-                isHovered1 ? "scale-110" : ""
+                isHovered2 ? "scale-110" : ""
               }`}
             />
           </AspectRatio>
@@ -95,7 +177,7 @@ export default function Projects() {
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
-              <span className="text-primary font-bold text-xl">02.</span>
+              <span className="text-primary font-bold text-xl">03.</span>
               <h3 className="uppercase lg:md:text-2xl text-xl mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
                 Rent my ride.
               </h3>
@@ -133,8 +215,8 @@ export default function Projects() {
         </div>
         <div
           className="lg:w-1/2 overflow-hidden mt-6 lg:mt-0 rounded-3xl flex"
-          onMouseEnter={() => setIsHovered2(true)}
-          onMouseLeave={() => setIsHovered2(false)}
+          onMouseEnter={() => setIsHovered3(true)}
+          onMouseLeave={() => setIsHovered3(false)}
         >
           <AspectRatio ratio={16 / 9}>
             <Image
@@ -146,7 +228,7 @@ export default function Projects() {
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="rent my ride website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
-                isHovered2 ? "scale-110" : ""
+                isHovered3 ? "scale-110" : ""
               }`}
             />
           </AspectRatio>
@@ -157,7 +239,7 @@ export default function Projects() {
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
-              <span className="text-primary font-bold text-xl">03.</span>
+              <span className="text-primary font-bold text-xl">04.</span>
               <h3 className="uppercase lg:md:text-2xl text-xl mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
                 reacttasks.
               </h3>
@@ -200,8 +282,8 @@ export default function Projects() {
         </div>
         <div
           className="lg:w-1/2 overflow-hidden mt-6 lg:mt-0 rounded-3xl flex"
-          onMouseEnter={() => setIsHovered3(true)}
-          onMouseLeave={() => setIsHovered3(false)}
+          onMouseEnter={() => setIsHovered4(true)}
+          onMouseLeave={() => setIsHovered4(false)}
         >
           <AspectRatio ratio={16 / 9}>
             <Image
@@ -213,7 +295,7 @@ export default function Projects() {
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="reacttasks website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
-                isHovered3 ? "scale-110" : ""
+                isHovered4 ? "scale-110" : ""
               }`}
             />
           </AspectRatio>
@@ -224,7 +306,7 @@ export default function Projects() {
         <div className="lg:w-1/2 flex flex-wrap mr-3">
           <CardHeader className="my-3 xl:lg:md:my-0">
             <div className="flex items-center">
-              <span className="text-primary font-bold text-xl">04.</span>
+              <span className="text-primary font-bold text-xl">05.</span>
               <h3 className="uppercase lg:md:text-2xl text-xl mx-3 lg:text-start text-center font-extrabold tracking-wide dark:text-white">
                 cv numerique.
               </h3>
@@ -258,8 +340,8 @@ export default function Projects() {
         </div>
         <div
           className="lg:w-1/2 overflow-hidden mt-6 lg:mt-0 rounded-3xl flex"
-          onMouseEnter={() => setIsHovered4(true)}
-          onMouseLeave={() => setIsHovered4(false)}
+          onMouseEnter={() => setIsHovered5(true)}
+          onMouseLeave={() => setIsHovered5(false)}
         >
           <AspectRatio ratio={16 / 9}>
             <Image
@@ -271,7 +353,7 @@ export default function Projects() {
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="cv numérique website"
               className={`object-cover rounded-3xl transition-all duration-500  ${
-                isHovered4 ? "scale-110" : ""
+                isHovered5 ? "scale-110" : ""
               }`}
             />
           </AspectRatio>
