@@ -1,19 +1,19 @@
 import Image from "next/image";
 
-import logoJs from "../../public/assets/logo-javascript.svg";
-import logoTs from "../../public/assets/typescript.svg";
-import logoPhp from "../../public/assets/php-1.svg";
-import logoNodeJs from "../../public/assets/nodejs-icon.svg";
-import logoReact from "../../public/assets/react-2.svg";
-import logoNextjs from "../../public/assets/next-js.svg";
-import logoAstro from "../../public/assets/Astro.svg";
-import logoMySql from "../../public/assets/mysql-logo.svg";
-import logoPostgres from "../../public/assets/PostgresSQL.svg";
-import logoMongo from "../../public/assets/mongodb-icon-1.svg";
-import logoJest from "../../public/assets/Jest.svg";
-import logoDocker from "../../public/assets/docker.svg";
-import logoGit from "../../public/assets/git-icon.svg";
-import logoFigma from "../../public/assets/figma-5.svg";
+import logoJs from "../assets/logo-javascript.svg";
+import logoTs from "../assets/typescript.svg";
+import logoPhp from "../assets/php-1.svg";
+import logoNodeJs from "../assets/nodejs-icon.svg";
+import logoReact from "../assets/react-2.svg";
+import logoNextjs from "../assets/next-js.svg";
+import logoAstro from "../assets/Astro.svg";
+import logoMySql from "../assets/mysql-logo.svg";
+import logoPostgres from "../assets/PostgresSQL.svg";
+import logoMongo from "../assets/mongodb-icon-1.svg";
+import logoJest from "../assets/Jest.svg";
+import logoDocker from "../assets/docker.svg";
+import logoGit from "../assets/git-icon.svg";
+import logoFigma from "../assets/figma-5.svg";
 
 export default function Skills() {
   const logos = [

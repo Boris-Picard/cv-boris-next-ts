@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Experiences from "./Experiences";
 import { Linkedin, Mail } from "lucide-react";
-import pp from "../../public/assets/PP.jpg"
+import pp from "../assets/PP.jpg"
 
 export default function About() {
   return (

@@ -7,11 +7,11 @@ import IconLink from "./Link";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { Separator } from "./ui/separator";
 
-import gifMyCryptoFolio from "../../public/assets/mycryptofolio.gif";
-import gifBlazerifle from "../../public/assets/gif-blazerifle.gif";
-import gifRentMyRide from "../../public/assets/gif-rent-my-ride.gif";
-import gifReacttasks from "../../public/assets/gif-reacttasks.gif";
-import gifCv from "../../public/assets/gif-cv.gif";
+import gifMyCryptoFolio from "../assets/mycryptofolio.gif";
+import gifBlazerifle from "../assets/gif-blazerifle.gif";
+import gifRentMyRide from "../assets/gif-rent-my-ride.gif";
+import gifReacttasks from "../assets/gif-reacttasks.gif";
+import gifCv from "../assets/gif-cv.gif";
 
 export default function Projects() {
   const [isHovered1, setIsHovered1] = useState(false);
