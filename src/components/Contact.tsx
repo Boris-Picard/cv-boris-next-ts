@@ -24,7 +24,7 @@ export default function Contact() {
           <div className="lg:w-1/5 md:w-1/4 md:space-x-3 flex flex-col space-y-3 md:flex-row md:space-y-0 sm:w-1/3">
             <a
               aria-label="Mail"
-              href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%62%6F%72%69%73%2D%70%69%63%61%72%64%2E%66%72"
+              href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%70%69%63%61%72%64%2E%62%6F%72%69%73%40%67%6D%61%69%6C%2E%63%6F%6D"
               className="inline-flex items-center p-3 dark:hover:text-primary justify-center whitespace-nowrap text-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary rounded-full text-white shadow-lg dark:bg-primary dark:hover:bg-white dark:hover:text-black dark:text-white  hover:bg-black  hover:text-white"
             >
               <Mail />
