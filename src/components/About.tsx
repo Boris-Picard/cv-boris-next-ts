@@ -48,7 +48,7 @@ export default function About() {
         </div>
         <div className="flex flex-1 flex-col justify-center lg:md:items-end items-center sm:mt-4">
           <Image
-            src={"/assets/PP.jpg"}
+            src={"/PP.jpg"}
             alt="Profil Picture"
             className="rounded-3xl z-50 object-cover"
             unoptimized

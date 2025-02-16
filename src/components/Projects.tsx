@@ -89,16 +89,15 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/assets/mycryptofolio.gif"
+              src="/mycryptofolio.gif"
               fill={true}
               unoptimized
               quality={75}
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="blazerifle website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${
-                isHovered1 ? "scale-110" : ""
-              }`}
+              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered1 ? "scale-110" : ""
+                }`}
             />
           </AspectRatio>
         </div>
@@ -159,16 +158,15 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/assets/gif-blazerifle.gif"
+              src="/gif-blazerifle.gif"
               fill={true}
               unoptimized
               quality={75}
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="blazerifle website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${
-                isHovered2 ? "scale-110" : ""
-              }`}
+              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered2 ? "scale-110" : ""
+                }`}
             />
           </AspectRatio>
         </div>
@@ -221,16 +219,15 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/assets/gif-rent-my-ride.gif"
+              src="/gif-rent-my-ride.gif"
               fill={true}
               quality={75}
               unoptimized
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="rent my ride website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${
-                isHovered3 ? "scale-110" : ""
-              }`}
+              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered3 ? "scale-110" : ""
+                }`}
             />
           </AspectRatio>
         </div>
@@ -288,16 +285,15 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/assets/gif-reacttasks.gif"
+              src="/gif-reacttasks.gif"
               fill={true}
               quality={75}
               unoptimized
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="reacttasks website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${
-                isHovered4 ? "scale-110" : ""
-              }`}
+              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered4 ? "scale-110" : ""
+                }`}
             />
           </AspectRatio>
         </div>
@@ -346,16 +342,15 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/assets/gif-cv.gif"
+              src="/gif-cv.gif"
               fill={true}
               quality={75}
               unoptimized
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
               alt="cv numérique website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${
-                isHovered5 ? "scale-110" : ""
-              }`}
+              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered5 ? "scale-110" : ""
+                }`}
             />
           </AspectRatio>
         </div>
