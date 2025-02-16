@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Experiences from "./Experiences";
 import { Linkedin, Mail } from "lucide-react";
+import pp from "../../public/assets/PP.jpg"
 
 export default function About() {
   return (
@@ -48,7 +49,7 @@ export default function About() {
         </div>
         <div className="flex flex-1 flex-col justify-center lg:md:items-end items-center sm:mt-4">
           <Image
-            src={"/PP.jpg"}
+            src={pp}
             alt="Profil Picture"
             className="rounded-3xl z-50 object-cover"
             unoptimized

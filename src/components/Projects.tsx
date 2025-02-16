@@ -7,6 +7,12 @@ import IconLink from "./Link";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { Separator } from "./ui/separator";
 
+import gifMyCryptoFolio from "../../public/assets/mycryptofolio.gif";
+import gifBlazerifle from "../../public/assets/gif-blazerifle.gif";
+import gifRentMyRide from "../../public/assets/gif-rent-my-ride.gif";
+import gifReacttasks from "../../public/assets/gif-reacttasks.gif";
+import gifCv from "../../public/assets/gif-cv.gif";
+
 export default function Projects() {
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
@@ -89,14 +95,14 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/mycryptofolio.gif"
+              src={gifMyCryptoFolio}
               fill={true}
               unoptimized
               quality={75}
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-              alt="blazerifle website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered1 ? "scale-110" : ""
+              alt="myCryptoFolio website"
+              className={`object-cover rounded-3xl transition-all duration-500 ${isHovered1 ? "scale-110" : ""
                 }`}
             />
           </AspectRatio>
@@ -158,14 +164,14 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/gif-blazerifle.gif"
+              src={gifBlazerifle}
               fill={true}
               unoptimized
               quality={75}
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-              alt="blazerifle website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered2 ? "scale-110" : ""
+              alt="Blazerifle website"
+              className={`object-cover rounded-3xl transition-all duration-500 ${isHovered2 ? "scale-110" : ""
                 }`}
             />
           </AspectRatio>
@@ -219,14 +225,14 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/gif-rent-my-ride.gif"
+              src={gifRentMyRide}
               fill={true}
               quality={75}
               unoptimized
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-              alt="rent my ride website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered3 ? "scale-110" : ""
+              alt="Rent my ride website"
+              className={`object-cover rounded-3xl transition-all duration-500 ${isHovered3 ? "scale-110" : ""
                 }`}
             />
           </AspectRatio>
@@ -285,14 +291,14 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/gif-reacttasks.gif"
+              src={gifReacttasks}
               fill={true}
               quality={75}
               unoptimized
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-              alt="reacttasks website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered4 ? "scale-110" : ""
+              alt="Reacttasks website"
+              className={`object-cover rounded-3xl transition-all duration-500 ${isHovered4 ? "scale-110" : ""
                 }`}
             />
           </AspectRatio>
@@ -342,14 +348,14 @@ export default function Projects() {
         >
           <AspectRatio ratio={16 / 9}>
             <Image
-              src="/gif-cv.gif"
+              src={gifCv}
               fill={true}
               quality={75}
               unoptimized
               loading="lazy"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-              alt="cv numérique website"
-              className={`object-cover rounded-3xl transition-all duration-500  ${isHovered5 ? "scale-110" : ""
+              alt="CV numérique website"
+              className={`object-cover rounded-3xl transition-all duration-500 ${isHovered5 ? "scale-110" : ""
                 }`}
             />
           </AspectRatio>
